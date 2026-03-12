@@ -13,25 +13,31 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Language switcher -->
+    <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language">
+        <button type="button" id="lang-switch-ua" aria-pressed="true">UA</button>
+        <button type="button" id="lang-switch-en" aria-pressed="false">EN</button>
+    </div>
+
     <!-- Hero Section -->
     <section class="hero" id="hero">
         <div class="container">
             <div class="hero-content">
-                <div class="hero-badge">Reddit для брендів</div>
+                <div class="hero-badge" data-i18n="heroBadge">Reddit для брендів</div>
                 <h1 class="hero-title">
-                    <span class="hero-title-line hero-title-accent">Перетворюю Reddit на канал трафіку, довіри й продажів</span>
+                    <span class="hero-title-line hero-title-accent" data-i18n="heroTitle">Перетворюю Reddit на канал трафіку, довіри й продажів</span>
                 </h1>
-                <p class="hero-description">
+                <p class="hero-description" data-i18n="heroDescription">
                     Для брендів, яким потрібна не просто присутність на Reddit, а системна робота з видимістю, репутацією та ростом.
                 </p>
                 <div class="hero-actions">
-                    <a href="#contact" class="btn btn-primary">Запланувати консультацію</a>
-                    <a href="#services" class="btn btn-secondary">Переглянути послуги</a>
+                    <a href="#contact" class="btn btn-primary" data-i18n="heroCtaPrimary">Запланувати консультацію</a>
+                    <a href="#services" class="btn btn-secondary" data-i18n="heroCtaSecondary">Переглянути послуги</a>
                 </div>
                 <div class="hero-values">
-                    <span class="hero-value">Reddit як канал росту</span>
-                    <span class="hero-value">Стратегія, а не разові пости</span>
-                    <span class="hero-value">Фокус на довіру й продажі</span>
+                    <span class="hero-value" data-i18n="heroValue1">Reddit як канал росту</span>
+                    <span class="hero-value" data-i18n="heroValue2">Стратегія, а не разові пости</span>
+                    <span class="hero-value" data-i18n="heroValue3">Фокус на довіру й продажі</span>
                 </div>
             </div>
         </div>
@@ -45,12 +51,12 @@
                     <img src="assets/images/profile-photo.jpg" alt="Анастасія — Reddit-експертка" />
                 </div>
                 <div class="greeting-text">
-                    <h2 class="greeting-title">Reddit під ключ: від довіри до трафіку й продажів</h2>
-                    <p class="greeting-lead">Працюю з Reddit понад 4 роки й беру напрям під ключ: акаунти, сабредіти, контент і репутація. Фокус завжди один — результат для бізнесу.</p>
+                    <h2 class="greeting-title" data-i18n="greetingTitle">Reddit під ключ: від довіри до трафіку й продажів</h2>
+                    <p class="greeting-lead" data-i18n="greetingLead">Працюю з Reddit понад 4 роки й беру напрям під ключ: акаунти, сабредіти, контент і репутація. Фокус завжди один — результат для бізнесу.</p>
                     <ul class="greeting-points">
-                        <li class="greeting-point"><span class="greeting-point-label">Стратегія під нішу</span> — без шаблонних рішень для всіх</li>
-                        <li class="greeting-point"><span class="greeting-point-label">Повний супровід</span> — від запуску до репутаційної роботи</li>
-                        <li class="greeting-point"><span class="greeting-point-label">Фокус на результаті</span> — без проєктів «для присутності»</li>
+                        <li class="greeting-point" data-i18n="greetingPoint1"><span class="greeting-point-label">Стратегія під нішу</span> — без шаблонних рішень для всіх</li>
+                        <li class="greeting-point" data-i18n="greetingPoint2"><span class="greeting-point-label">Повний супровід</span> — від запуску до репутаційної роботи</li>
+                        <li class="greeting-point" data-i18n="greetingPoint3"><span class="greeting-point-label">Фокус на результаті</span> — без проєктів «для присутності»</li>
                     </ul>
                 </div>
             </div>
@@ -60,7 +66,7 @@
     <!-- Services Section — order: entry → execution → ongoing → reputation -->
     <section class="services" id="services">
         <div class="container">
-            <h2 class="section-title">Мої послуги</h2>
+            <h2 class="section-title" data-i18n="servicesTitle">Мої послуги</h2>
             <div class="services-grid">
                 <!-- 1. Entry: Strategic review -->
                 <article class="service-teaser">
@@ -70,11 +76,11 @@
                             <path d="M12 6V12L16 14" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="service-teaser-title">Стратегічний розбір Reddit-напрямку</h3>
-                    <p class="service-teaser-desc">Розбір ніші, цілей і стратегії — щоб виходити на Reddit зрозуміло.</p>
-                    <div class="service-teaser-price">$250</div>
-                    <p class="service-teaser-note">Разова консультація · до 1.5 год</p>
-                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-1">Детальніше</button>
+                    <h3 class="service-teaser-title" data-i18n="card1Title">Стратегічний розбір Reddit-напрямку</h3>
+                    <p class="service-teaser-desc" data-i18n="card1Desc">Розбір ніші, цілей і стратегії — щоб виходити на Reddit зрозуміло.</p>
+                    <div class="service-teaser-price">$300</div>
+                    <p class="service-teaser-note" data-i18n="card1Note">Разова консультація · до 1.5 год</p>
+                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-1" data-i18n="btnDetails">Детальніше</button>
                 </article>
                 <!-- 2. Reddit post -->
                 <article class="service-teaser">
@@ -87,11 +93,11 @@
                             <path d="M10 9H9H8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="service-teaser-title">Reddit-пост</h3>
-                    <p class="service-teaser-desc">Нативний пост під ключ: підбір сабу, коментарі, прогрів.</p>
+                    <h3 class="service-teaser-title" data-i18n="card2Title">Reddit-пост</h3>
+                    <p class="service-teaser-desc" data-i18n="card2Desc">Нативний пост під вашу задачу, нішу та формат сабредіта.</p>
                     <div class="service-teaser-price">від $150</div>
-                    <p class="service-teaser-note">Пакети: Starter / Growth / Boost</p>
-                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-2">Детальніше</button>
+                    <p class="service-teaser-note" data-i18n="card2Note">3 пакети: Starter / Growth / Boost</p>
+                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-2" data-i18n="btnDetails">Детальніше</button>
                 </article>
                 <!-- 3. Comment posting -->
                 <article class="service-teaser">
@@ -100,11 +106,11 @@
                             <path d="M21 15C21 15.5304 20.7893 16.0391 20.4142 16.4142C20.0391 16.7893 19.5304 17 19 17H7L3 21V5C3 4.46957 3.21071 3.96086 3.58579 3.58579C3.96086 3.21071 4.46957 3 5 3H19C19.5304 3 20.0391 3.21071 20.4142 3.58579C20.7893 3.96086 21 4.46957 21 5V15Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="service-teaser-title">Постинг коментарів</h3>
-                    <p class="service-teaser-desc">Нативні коментарі з посиланнями під постами — видимість і трафік.</p>
-                    <div class="service-teaser-price">від $80</div>
-                    <p class="service-teaser-note">За пакетом коментарів</p>
-                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-3">Детальніше</button>
+                    <h3 class="service-teaser-title" data-i18n="card3Title">Постинг коментарів</h3>
+                    <p class="service-teaser-desc" data-i18n="card3Desc">Нативна коментарна активність у релевантних тредах для видимості бренду, довіри й підтримки теми.</p>
+                    <div class="service-teaser-price">від $100</div>
+                    <p class="service-teaser-note" data-i18n="card3Note">від 10 коментарів</p>
+                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-3" data-i18n="btnDetails">Детальніше</button>
                 </article>
                 <!-- 4. Subreddit management -->
                 <article class="service-teaser">
@@ -114,15 +120,15 @@
                             <path d="M12 13C13.6569 13 15 11.6569 15 10C15 8.34315 13.6569 7 12 7C10.3431 7 9 8.34315 9 10C9 11.6569 10.3431 13 12 13Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="service-teaser-title">Ведення сабредіту</h3>
-                    <p class="service-teaser-desc">Ведення сабу під ключ: контент, модерація, кроспости.</p>
-                    <div class="service-teaser-price">$600/місяць</div>
-                    <p class="service-teaser-note">Щомісячно під ключ</p>
-                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-4">Детальніше</button>
+                    <h3 class="service-teaser-title" data-i18n="card4Title">Ведення сабредіту</h3>
+                    <p class="service-teaser-desc" data-i18n="card4Desc">Комплексне ведення сабредіту: контент, активність, модерація та ріст.</p>
+                    <div class="service-teaser-price">$900/місяць</div>
+                    <p class="service-teaser-note" data-i18n="card4Note">Щомісячно під ключ</p>
+                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-4" data-i18n="btnDetails">Детальніше</button>
                 </article>
                 <!-- 5. Reputation: Post removal (visually distinct) -->
                 <article class="service-teaser service-teaser--reputation">
-                    <span class="service-teaser-badge">Репутація</span>
+                    <span class="service-teaser-badge" data-i18n="card5Badge">Репутація</span>
                     <div class="service-teaser-icon">
                         <svg width="40" height="40" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3 6H5H21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -131,11 +137,11 @@
                             <path d="M14 11V17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
                         </svg>
                     </div>
-                    <h3 class="service-teaser-title">Видалення Reddit-поста</h3>
-                    <p class="service-teaser-desc">Видалення небажаного поста. Оплата за результатом.</p>
+                    <h3 class="service-teaser-title" data-i18n="card5Title">Видалення Reddit-поста</h3>
+                    <p class="service-teaser-desc" data-i18n="card5Desc">Контрольований процес зниження видимості небажаного поста.</p>
                     <div class="service-teaser-price">$300/пост</div>
-                    <p class="service-teaser-note">Оплата за фактом видалення</p>
-                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-5">Детальніше</button>
+                    <p class="service-teaser-note" data-i18n="card5Note">Оплата лише за результат</p>
+                    <button type="button" class="btn btn-secondary btn-details" data-modal="modal-service-5" data-i18n="btnDetails">Детальніше</button>
                 </article>
             </div>
         </div>
@@ -155,56 +161,47 @@
                         </svg>
                     </div>
                     <div class="service-title-wrapper">
-                        <h3 class="service-title">Стратегічний розбір Reddit-напрямку</h3>
-                        <p class="service-subtitle">Разова консультація · до 1.5 год</p>
+                        <h3 class="service-title" data-i18n="m1Title">Стратегічний розбір Reddit-напрямку</h3>
+                        <p class="service-subtitle" data-i18n="m1Subtitle">Разова консультація · до 1.5 год</p>
                     </div>
-                    <div class="service-price-main">$250</div>
+                    <div class="service-price-main">$300</div>
                 </div>
                 <div class="service-content">
-                    <p class="modal-intro">Структурований розбір вашої ніші, цілей і можливостей на Reddit. Після розбору ви матимете чітке розуміння, з чого почати і як рухатися далі.</p>
+                    <p class="modal-intro" data-i18n="m1Intro">Стратегічний розбір допомагає зрозуміти, чи варто вашому бізнесу заходити в Reddit, як отримувати з нього трафік і як уникнути хаотичного запуску та репутаційних ризиків.</p>
                     <div class="service-section">
-                        <h4 class="service-section-title">Кому підходить</h4>
-                        <ul class="service-list">
-                            <li>Тим, хто ще не працював з Reddit і хоче оцінити потенціал</li>
-                            <li>Брендам, які вже пробували, але немає системи</li>
-                            <li>Тим, хто планує масштабувати присутність</li>
+                        <h4 class="service-section-title" data-i18n="m1WhoTitle">Кому підходить</h4>
+                        <ul class="service-list service-list--dots" data-i18n-list="m1WhoList">
+                            <li>Брендам, які хочуть використовувати Reddit як канал росту</li>
+                            <li>Бізнесам із негативними згадками або слабкою репутацією</li>
+                            <li>Командам, які вже пробували Reddit, але не отримали результату</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що входить</h4>
-                        <ul class="service-list">
-                            <li>Аналіз ніші та релевантних сабредітів</li>
-                            <li>Розбір ваших відповідей з брифу</li>
-                            <li>Рекомендації по формату контенту та активності</li>
-                            <li>Ключові ризики та можливості</li>
+                        <h4 class="service-section-title" data-i18n="m1WhatTitle">Що входить</h4>
+                        <ul class="service-list" data-i18n-list="m1WhatList">
+                            <li>Аналіз потенціалу Reddit для вашої ніші</li>
+                            <li>Підбір релевантних сабредітів</li>
+                            <li>Розбір ризиків і типових помилок</li>
+                            <li>Рекомендації по форматах контенту і сценаріях росту</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що ви отримаєте</h4>
-                        <ul class="service-list">
-                            <li>Чітке розуміння потенціалу Reddit для вашого бізнесу</li>
-                            <li>Напрямки для старту або масштабування</li>
-                            <li>Список конкретних кроків</li>
-                        </ul>
+                        <h4 class="service-section-title" data-i18n="m1OutcomeTitle">Що ви отримаєте</h4>
+                        <div class="service-outcome-killer">
+                            <p class="service-outcome-killer-lead">Чітке розуміння, як підійти до Reddit у вашій ніші: з чого почати, які формати працюватимуть і як уникнути зайвих витрат на хаотичний запуск.</p>
+                        </div>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Формат роботи</h4>
+                        <h4 class="service-section-title" data-i18n="m1FormatTitle">Як проходить стратегічний розбір</h4>
                         <ol class="service-list ordered">
                             <li>Ви заповнюєте короткий бриф</li>
-                            <li>Я готую попередній аналіз (до 5 робочих днів)</li>
-                            <li>Фіксуємо дзвінок і розбираємо кейс</li>
+                            <li>Я готую попередній аналіз ніші</li>
+                            <li>На дзвінку розбираємо кейс і фіксуємо рішення</li>
                         </ol>
-                        <p class="service-price-note">Мова: українська (вільно) / англійська (В1). Консультація не передбачає письмову стратегію.</p>
-                    </div>
-                    <div class="service-section important-section">
-                        <h4 class="service-section-title">Важливо</h4>
-                        <ul class="service-list">
-                            <li>Після заповнення брифу та оплати — підготовка до 5 робочих днів</li>
-                            <li>Послуга разова, без супроводу після</li>
-                        </ul>
+                        <p class="service-price-note">Мова: українська (вільно) / англійська (B1). Консультація не передбачає підготовку письмової стратегії.</p>
                     </div>
                     <div class="modal-cta">
-                        <a href="#contact" class="btn btn-primary">Запланувати консультацію</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="m1Cta">Запланувати консультацію</a>
                     </div>
                 </div>
             </div>
@@ -227,68 +224,67 @@
                         </svg>
                     </div>
                     <div class="service-title-wrapper">
-                        <h3 class="service-title">Reddit-пост</h3>
-                        <p class="service-subtitle">Один пост під ключ · пакети Starter / Growth / Boost</p>
+                        <h3 class="service-title" data-i18n="m2Title">Reddit-пост</h3>
+                        <p class="service-subtitle" data-i18n="m2Subtitle">Один пост під ключ · 3 пакети активності</p>
                     </div>
                     <div class="service-price-main">від $150</div>
                 </div>
                 <div class="service-content">
-                    <p class="modal-intro">Нативний Reddit-пост, що не виглядає рекламою: підбір сабу, написання, жива активність у коментарях та кероване підсилення видимості.</p>
+                    <p class="modal-intro" data-i18n="m2Intro">Готую нативний Reddit-пост під вашу задачу: від підбору формату й сабредіта до публікації та стартової активності в коментарях.</p>
                     <div class="service-section">
-                        <h4 class="service-section-title">Кому підходить</h4>
-                        <ul class="service-list">
-                            <li>Тим, хто хоче протестувати Reddit одним сильним постом</li>
-                            <li>Брендам з готовим продуктом/історією для нативного формату</li>
-                            <li>Для посилань, трафіку або обговорень у коментарях</li>
+                        <h4 class="service-section-title" data-i18n="m2WhoTitle">Кому підходить</h4>
+                        <ul class="service-list service-list--dots" data-i18n-list="m2WhoList">
+                            <li>брендам, які хочуть протестувати Reddit одним сильним запуском</li>
+                            <li>проєктам із продуктом або темою, яку можна нативно вписати в дискусію</li>
+                            <li>кейсам, де важлива видимість, обговорення або м’який вхід у Reddit</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що входить</h4>
-                        <ul class="service-list">
-                            <li>Написання нативного поста, узгодження тону та цілей</li>
-                            <li>Підбір релевантного сабредіту</li>
-                            <li>Унікальні коментарі від різних персонажів, кероване підсилення</li>
-                            <li>Робота з різних акаунтів, дотримання правил платформи</li>
+                        <h4 class="service-section-title" data-i18n="m2WhatTitle">Що входить</h4>
+                        <ul class="service-list" data-i18n-list="m2WhatList">
+                            <li>підбір формату поста під вашу задачу</li>
+                            <li>підбір релевантного сабредіта</li>
+                            <li>написання нативного тексту</li>
+                            <li>узгодження тону й подачі</li>
+                            <li>стартова активність у коментарях залежно від пакета</li>
+                            <li>базове підсилення видимості в межах логіки запуску</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що ви отримаєте</h4>
-                        <ul class="service-list">
-                            <li>Один опублікований пост з живою обговоренням</li>
-                            <li>Стартова видимість за рахунок коментарів та апвоутів</li>
-                            <li>Оцінка результату на етапі публікації та первинної активності</li>
+                        <h4 class="service-section-title" data-i18n="m2OutcomeTitle">Що ви отримаєте</h4>
+                        <ul class="service-list" data-i18n-list="m2OutcomeList">
+                            <li>готовий Reddit-пост, адаптований під контекст сабредіта</li>
+                            <li>стартову видимість через коментарну активність</li>
+                            <li>зрозумілий формат разового запуску без хаосу</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Формат роботи · Пакети</h4>
+                        <h4 class="service-section-title" data-i18n="m2FormatTitle">Формат роботи · Пакети</h4>
                         <div class="pricing-packages">
                             <div class="pricing-package">
-                                <div class="package-name">Starter</div>
-                                <div class="package-price">$150</div>
-                                <div class="package-details">1 пост + 10 коментарів + до 10 апвоутів</div>
+                                <div class="package-name" data-i18n="m2Package1">STARTER — $150</div>
+                                <div class="package-details" data-i18n="m2Package1Details">1 пост + 10 коментарів + до 10 апвоутів</div>
                             </div>
                             <div class="pricing-package">
-                                <div class="package-name">Growth</div>
-                                <div class="package-price">$250</div>
-                                <div class="package-details">1 пост + 30 коментарів + до 30 апвоутів</div>
+                                <div class="package-name" data-i18n="m2Package2">GROWTH — $250</div>
+                                <div class="package-details" data-i18n="m2Package2Details">1 пост + 30 коментарів + до 30 апвоутів</div>
                             </div>
                             <div class="pricing-package">
-                                <div class="package-name">Boost</div>
-                                <div class="package-price">$400</div>
-                                <div class="package-details">1 пост + 50 коментарів + до 40 апвоутів</div>
+                                <div class="package-name" data-i18n="m2Package3">BOOST — $400</div>
+                                <div class="package-details" data-i18n="m2Package3Details">1 пост + 50 коментарів + до 40 апвоутів</div>
                             </div>
                         </div>
-                        <p class="additional-option">+10 додаткових коментарів — $30 <span>(у межах логіки пакету)</span></p>
+                        <p class="additional-option" data-i18n="m2Extra">+10 додаткових коментарів — $50 <span>(у межах логіки пакета)</span></p>
                     </div>
-                    <div class="service-section important-section">
-                        <h4 class="service-section-title">Важливо</h4>
-                        <ul class="service-list">
-                            <li>Формат, сабредіт і тон узгоджуються до публікації. Послуга разова.</li>
-                            <li>Якщо пост активний протягом 5 днів — робота вважається виконаною. Подальше життя поста не гарантується.</li>
-                        </ul>
+                    <div class="service-section service-section--note">
+                        <h4 class="service-section-title" data-i18n="m2ImportantTitle">Важливо</h4>
+                        <div class="service-note-block">
+                            <p>Формат, сабредіт і тон узгоджуються до публікації.</p>
+                            <p>Якщо пост активно живе перші 5 днів, публікація вважається виконаною. Подальше життя поста залежить від теми, сабредіта й реакції аудиторії.</p>
+                        </div>
                     </div>
                     <div class="modal-cta">
-                        <a href="#contact" class="btn btn-primary">Обговорити пост</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="m2Cta">Обговорити пост</a>
                     </div>
                 </div>
             </div>
@@ -298,7 +294,7 @@
     <div id="modal-service-3" class="modal" aria-hidden="true">
         <div class="modal-overlay"></div>
         <div class="modal-dialog">
-            <button type="button" class="modal-close" aria-label="Закрити">&times;</button>
+            <button type="button" class="modal-close" data-i18n-aria="modalClose" aria-label="Закрити">&times;</button>
             <div class="modal-body service-card">
                 <div class="service-header">
                     <div class="service-icon">
@@ -307,49 +303,55 @@
                         </svg>
                     </div>
                     <div class="service-title-wrapper">
-                        <h3 class="service-title">Постинг коментарів</h3>
-                        <p class="service-subtitle">Нативні коментарі з посиланнями під постами</p>
+                        <h3 class="service-title" data-i18n="m3Title">Постинг коментарів</h3>
+                        <p class="service-subtitle" data-i18n="m3Subtitle">Нативна коментарна активність у релевантних обговореннях</p>
                     </div>
-                    <div class="service-price-main">від $80</div>
+                    <div class="service-price-main">від $100</div>
                 </div>
                 <div class="service-content">
-                    <p class="modal-intro">Публікація нативних коментарів з посиланнями під чужими постами у релевантних сабредітах. Підходить для видимості бренду, трафіку та соціального підтвердження.</p>
+                    <p class="modal-intro" data-i18n="m3Intro">Публікую нативні коментарі у релевантних тредах, щоб підтримати видимість бренду, присутність у темі та логіку обговорення без окремого запуску поста.</p>
                     <div class="service-section">
-                        <h4 class="service-section-title">Кому підходить</h4>
-                        <ul class="service-list">
-                            <li>Тим, хто вже веде пости і хоче додати коментарну присутність</li>
-                            <li>Брендам, яким потрібен трафік з обговорень без створення власних постів</li>
-                            <li>Для посилань у відповідях на популярні питання/пости</li>
+                        <h4 class="service-section-title" data-i18n="m3WhoTitle">Кому підходить</h4>
+                        <ul class="service-list service-list--dots" data-i18n-list="m3WhoList">
+                            <li>брендам, які хочуть м’яку присутність у Reddit-дискусіях</li>
+                            <li>проєктам, яким важливо підтримувати тему без окремих постів</li>
+                            <li>кейсам, де потрібна видимість у релевантних обговореннях</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що входить</h4>
-                        <ul class="service-list">
-                            <li>Підбір релевантних постів і сабредітів</li>
-                            <li>Написання унікальних коментарів з посиланням (нативний тон)</li>
-                            <li>Публікація з різних акаунтів, дотримання правил</li>
+                        <h4 class="service-section-title" data-i18n="m3WhatTitle">Що входить</h4>
+                        <ul class="service-list" data-i18n-list="m3WhatList">
+                            <li>підбір релевантних постів і сабредітів</li>
+                            <li>написання нативних коментарів під контекст дискусії</li>
+                            <li>адаптація тону й формату під конкретний тред</li>
+                            <li>публікація в узгодженому обсязі</li>
+                            <li>дотримання логіки платформи та правил сабредітів</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що ви отримаєте</h4>
-                        <ul class="service-list">
-                            <li>Опубліковані коментарі з посиланнями у вибраних обговореннях</li>
-                            <li>Видимість бренду в контексті релевантних тем</li>
+                        <h4 class="service-section-title" data-i18n="m3OutcomeTitle">Що ви отримаєте</h4>
+                        <ul class="service-list" data-i18n-list="m3OutcomeList">
+                            <li>присутність бренду в релевантних обговореннях</li>
+                            <li>додаткову видимість у темах, де вже є увага аудиторії</li>
+                            <li>м’яку підтримку довіри та впізнаваності</li>
+                            <li>формат, який можна використовувати окремо або як частину ширшої Reddit-стратегії</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Формат роботи</h4>
-                        <p class="service-price-text">Вартість залежить від обсягу: кількість коментарів, складність ніші та розмір сабредітів. Пакети від 10 коментарів — <strong>від $80</strong>. Точна ціна після уточнення задач.</p>
+                        <h4 class="service-section-title" data-i18n="m3FormatTitle">Формат роботи</h4>
+                        <p class="service-price-text" data-i18n="m3FormatText">Вартість залежить від обсягу, складності ніші та рівня релевантності тредів. Мінімальний пакет — 10 коментарів від $100. Точна ціна визначається після уточнення задачі.</p>
                     </div>
-                    <div class="service-section important-section">
-                        <h4 class="service-section-title">Важливо</h4>
-                        <ul class="service-list">
-                            <li>Коментарі пишуться під конкретні пости, без масового спаму</li>
-                            <li>Результат залежить від правил сабредіту та модерації</li>
-                        </ul>
+                    <div class="service-section service-section--note">
+                        <h4 class="service-section-title" data-i18n="m3ImportantTitle">Важливо</h4>
+                        <div class="service-note-block" data-i18n-list="m3ImportantList">
+                            <p>Коментарі розміщуються точково, під конкретні обговорення.</p>
+                            <p>Результат залежить від теми, сабредіта та реакції аудиторії.</p>
+                            <p>Протягом 7 днів після розміщення коментарів моніторю коментарі, відповіді та загальну динаміку активності в пості, включно з апвоутами.</p>
+                            <p>Це інструмент підтримки видимості, а не заміна повноцінному Reddit-напрямку.</p>
+                        </div>
                     </div>
                     <div class="modal-cta">
-                        <a href="#contact" class="btn btn-primary">Обговорити обсяг</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="m3Cta">Обговорити обсяг</a>
                     </div>
                 </div>
             </div>
@@ -369,51 +371,55 @@
                         </svg>
                     </div>
                     <div class="service-title-wrapper">
-                        <h3 class="service-title">Ведення сабредіту</h3>
-                        <p class="service-subtitle">Повне ведення під ключ · щомісячно</p>
+                        <h3 class="service-title" data-i18n="m4Title">Ведення сабредіту</h3>
+                        <p class="service-subtitle" data-i18n="m4Subtitle">Повне ведення під ключ · щомісячно</p>
                     </div>
-                    <div class="service-price-main">$600/місяць</div>
+                    <div class="service-price-main">$900/місяць</div>
                 </div>
                 <div class="service-content">
-                    <p class="modal-intro">Комплексне ведення вашого сабредіту: контент-план, нативні пости, прогрів коментарями, модерація та кроспости для росту. Все під ключ, без додаткових оплат у процесі.</p>
+                    <p class="modal-intro" data-i18n="m4Intro">Беру сабредіт на системне ведення: контент, активність, модерація, кроспости та розвиток простору як живого й корисного каналу для бренду.</p>
                     <div class="service-section">
-                        <h4 class="service-section-title">Кому підходить</h4>
-                        <ul class="service-list">
-                            <li>Брендам з власним сабредітом, яким потрібна регулярна присутність</li>
-                            <li>Тим, хто хоче, щоб саб виглядав живим і активним</li>
-                            <li>Проєктам з довгостроковою метою на Reddit</li>
+                        <h4 class="service-section-title" data-i18n="m4WhoTitle">Кому підходить</h4>
+                        <ul class="service-list service-list--dots" data-i18n-list="m4WhoList">
+                            <li>брендам із власним сабредітом, яким потрібна регулярна присутність</li>
+                            <li>проєктам, які хочуть зробити сабредіт живим, структурованим і корисним</li>
+                            <li>командам, які будують довгострокову присутність бренду на Reddit</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що входить</h4>
-                        <ul class="service-list">
-                            <li>Контент-план на місяць, 3–4 нативні пости на тиждень</li>
-                            <li>Прогрів 1–2 постів на тиждень коментарями та апвоути</li>
-                            <li>Модерація, апруви, чистка негативу, підтримка дискусій</li>
-                            <li>2 кроспости на місяць у релевантні саби для залучення</li>
-                            <li>Базове оформлення та структура сабу за потреби</li>
+                        <h4 class="service-section-title" data-i18n="m4WhatTitle">Що входить</h4>
+                        <ul class="service-list" data-i18n-list="m4WhatList">
+                            <li>контент-план на місяць</li>
+                            <li>3–4 нативні пости на тиждень</li>
+                            <li>підсилення 1–2 постів на тиждень стартовою активністю</li>
+                            <li>модерація, апруви, підтримка порядку й дискусій</li>
+                            <li>2 кроспости на місяць у релевантні сабредіти</li>
+                            <li>базове оформлення та оновлення структури сабу за потреби</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що ви отримаєте</h4>
-                        <ul class="service-list">
-                            <li>Сабредіт, що виглядає живим і активним</li>
-                            <li>Пости з стартовою видимістю та керованим ростом</li>
-                            <li>Безпечну роботу відповідно до правил платформи</li>
+                        <h4 class="service-section-title" data-i18n="m4OutcomeTitle">Що ви отримаєте</h4>
+                        <ul class="service-list" data-i18n-list="m4OutcomeList">
+                            <li>сабредіт, який виглядає живим і доглянутим</li>
+                            <li>регулярну присутність бренду без хаотичного постингу</li>
+                            <li>стартову видимість і контрольований ріст активності</li>
+                            <li>простір, який працює на довіру до бренду</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Формат роботи</h4>
-                        <p class="service-price-text">Фіксована ціна <strong>$600 / місяць</strong>. Включено всі інструменти, акаунти для активності та повне ведення. Додаткових оплат немає.</p>
+                        <h4 class="service-section-title" data-i18n="m4FormatTitle">Формат роботи</h4>
+                        <p class="service-price-text" data-i18n="m4FormatText">Фіксована ціна — <strong>$900/місяць</strong>. У вартість входить повне щомісячне ведення, включно з контентом, модерацією та активністю. Додаткових оплат у процесі немає.</p>
                     </div>
-                    <div class="service-section important-section">
-                        <h4 class="service-section-title">Важливо</h4>
-                        <ul class="service-list">
-                            <li>Ведення ведеться щомісячно, можливе продовження</li>
-                        </ul>
+                    <div class="service-section service-section--note">
+                        <h4 class="service-section-title" data-i18n="m4ImportantTitle">Важливо</h4>
+                        <div class="service-note-block" data-i18n-list="m4ImportantList">
+                            <p>Ведення здійснюється щомісячно, з можливістю продовження.</p>
+                            <p>Ріст залежить від ніші, стартового стану сабу та тем контенту.</p>
+                            <p>Фокус не на кількості постів, а на якості простору й системній присутності.</p>
+                        </div>
                     </div>
                     <div class="modal-cta">
-                        <a href="#contact" class="btn btn-primary">Обговорити ведення</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="m4Cta">Обговорити ведення</a>
                     </div>
                 </div>
             </div>
@@ -435,47 +441,53 @@
                         </svg>
                     </div>
                     <div class="service-title-wrapper">
-                        <h3 class="service-title">Видалення Reddit-поста</h3>
-                        <p class="service-subtitle">Репутація · оплата лише за результатом</p>
+                        <h3 class="service-title" data-i18n="m5Title">Видалення Reddit-поста</h3>
+                        <p class="service-subtitle" data-i18n="m5Subtitle">Репутація · оплата лише за результат</p>
                     </div>
                     <div class="service-price-main">$300/пост</div>
                 </div>
                 <div class="service-content">
-                    <p class="modal-intro">Контрольований процес видалення небажаного поста з Reddit. Я не гарантую 100% видалення — це залежить від алгоритмів і модераторів. Моя робота — знизити довіру до поста, щоб він зник через фільтри Reddit або модерацію.</p>
+                    <p class="modal-intro" data-i18n="m5Intro">Працюю над зниженням видимості небажаного Reddit-поста в межах доступних механік платформи. Результат залежить від сабредіта, модерації, історії поста та рівня активності.</p>
                     <div class="service-section">
-                        <h4 class="service-section-title">Кому підходить</h4>
-                        <ul class="service-list">
-                            <li>Тим, хто хоче прибрати небажану публікацію з Reddit та пошуку</li>
-                            <li>Кризовий або репутаційний кейс</li>
+                        <h4 class="service-section-title" data-i18n="m5WhoTitle">Кому підходить</h4>
+                        <ul class="service-list service-list--dots" data-i18n-list="m5WhoList">
+                            <li>брендам, яким потрібно прибрати небажану публікацію з поля зору</li>
+                            <li>кейсам із репутаційним або кризовим ризиком</li>
+                            <li>ситуаціям, де пост шкодить довірі, пошуковій видачі або сприйняттю бренду</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що входить</h4>
-                        <ul class="service-list">
-                            <li>Поступова робота з постом (може тривати до 1–2 місяців)</li>
-                            <li>При кількох постах — робота по черзі, без масових дій</li>
+                        <h4 class="service-section-title" data-i18n="m5WhatTitle">Що входить</h4>
+                        <ul class="service-list" data-i18n-list="m5WhatList">
+                            <li>аналіз поста, контексту та шансів на результат</li>
+                            <li>вибір адекватної тактики роботи</li>
+                            <li>поступова робота без масових дій</li>
+                            <li>супровід кейсу до фінального статусу</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Що ви отримаєте</h4>
-                        <ul class="service-list">
-                            <li>Тіло поста стає невидимим (коментарі можуть залишитися)</li>
-                            <li>Пост випадає з пошуку Reddit і зазвичай з Google-індексу протягом 2–7 днів</li>
+                        <h4 class="service-section-title" data-i18n="m5OutcomeTitle">Що ви отримаєте</h4>
+                        <ul class="service-list" data-i18n-list="m5OutcomeList">
+                            <li>зниження видимості небажаного поста</li>
+                            <li>у разі успішного кейсу — недоступність тіла поста</li>
+                            <li>менший вплив публікації на сприйняття бренду</li>
                         </ul>
                     </div>
                     <div class="service-section">
-                        <h4 class="service-section-title">Формат роботи</h4>
-                        <p class="service-price-text"><strong>$300 за 1 пост</strong> — оплата лише у разі успішного видалення. Якщо пост не вдалося видалити — ви нічого не платите.</p>
+                        <h4 class="service-section-title" data-i18n="m5FormatTitle">Формат роботи</h4>
+                        <p class="service-price-text" data-i18n="m5FormatText">$300 за 1 пост — оплата лише у разі успішного результату. Якщо пост не вдається прибрати, ви нічого не сплачуєте.</p>
                     </div>
-                    <div class="service-section important-section">
-                        <h4 class="service-section-title">Важливо</h4>
-                        <ul class="service-list">
-                            <li>Коментарі під постом можуть залишитися; тіло поста більше не видиме</li>
-                            <li>Швидкість і результат залежать від сабредіту, історії поста та активності</li>
-                        </ul>
+                    <div class="service-section service-section--note">
+                        <h4 class="service-section-title" data-i18n="m5ImportantTitle">Важливо</h4>
+                        <div class="service-note-block" data-i18n-list="m5ImportantList">
+                            <p>100% гарантії видалення немає.</p>
+                            <p>Коментарі під постом можуть залишитися, навіть якщо тіло поста стане недоступним.</p>
+                            <p>Строки залежать від сабредіта, історії поста та рівня активності.</p>
+                            <p>Після успішного видалення пост зазвичай зникає з пошуку Reddit і з часом випадає з Google-індексу.</p>
+                        </div>
                     </div>
                     <div class="modal-cta">
-                        <a href="#contact" class="btn btn-primary">Обговорити кейс</a>
+                        <a href="#contact" class="btn btn-primary" data-i18n="m5Cta">Обговорити кейс</a>
                     </div>
                 </div>
             </div>
@@ -485,8 +497,8 @@
     <!-- Contact Section -->
     <section class="contact" id="contact">
         <div class="container">
-            <h2 class="section-title">Зв'яжіться зі мною</h2>
-            <p class="contact-description">Готовий обговорити ваш проєкт? Напишіть мені в зручний для вас спосіб</p>
+            <h2 class="section-title" data-i18n="contactTitle">Зв'яжіться зі мною</h2>
+            <p class="contact-description" data-i18n="contactDescription">Готова обговорити ваш проєкт. Напишіть мені у зручний для вас спосіб.</p>
             <div class="contact-links">
                 <a href="https://t.me/a_gaiduchenko" target="_blank" rel="noopener noreferrer" class="contact-link telegram">
                     <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -518,8 +530,8 @@
     </section>
 
     <!-- Floating button: scroll to contact -->
-    <a href="#contact" class="floating-contact" aria-label="Перейти до контактів">
-        <span class="floating-contact-text">Контакти</span>
+    <a href="#contact" class="floating-contact" data-i18n-aria="floatingContactAria" aria-label="Перейти до контактів">
+        <span class="floating-contact-text" data-i18n="floatingContact">Контакти</span>
         <svg class="floating-contact-icon" width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M4 4H20C21.1 4 22 4.9 22 6V18C22 19.1 21.1 20 20 20H4C2.9 20 2 19.1 2 18V6C2 4.9 2.9 4 4 4Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
             <path d="M22 6L12 13L2 6" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
@@ -529,10 +541,12 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
-            <p class="footer-text">&copy; 2026 Reddit Manager. Всі права захищені.</p>
+            <p class="footer-text" data-i18n="footerCopy">&copy; 2026 Анастасія Гайдученко. Всі права захищені.</p>
         </div>
     </footer>
 
+    <script src="js/translations.js"></script>
+    <script src="js/i18n.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
