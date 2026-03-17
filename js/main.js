@@ -7,6 +7,10 @@ function initModals() {
     function openModal(id) {
         const modal = document.getElementById(id);
         if (modal) {
+            const modalBody = modal.querySelector('.modal-body');
+            if (modalBody) {
+                modalBody.scrollTop = 0;
+            }
             modal.classList.add('is-open');
             modal.setAttribute('aria-hidden', 'false');
             document.body.style.overflow = 'hidden';
