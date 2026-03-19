@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+# GitHub Pages static site
+Sitemap: https://gaiduchenkoanastasiia.github.io/reddit/sitemap.xml
+
