@@ -6,8 +6,20 @@
   var STORAGE_KEY = 'reddit-lang';
   var DEFAULT_LANG = 'ua';
 
+  function getUrlLang() {
+    try {
+      var params = new URLSearchParams(window.location.search);
+      var lang = params.get('lang');
+      return (lang === 'ua' || lang === 'en') ? lang : null;
+    } catch (e) {
+      return null;
+    }
+  }
+
   function getStoredLang() {
     try {
+      var urlLang = getUrlLang();
+      if (urlLang) return urlLang;
       var stored = localStorage.getItem(STORAGE_KEY);
       return (stored === 'ua' || stored === 'en') ? stored : DEFAULT_LANG;
     } catch (e) {
@@ -53,6 +65,39 @@
     if (!t || !document.querySelector) return;
 
     document.documentElement.lang = lang === 'en' ? 'en' : 'uk';
+
+    // Update meta tags for SEO
+    if (t.metaTitle) {
+      document.title = t.metaTitle;
+    }
+    var metaDesc = document.getElementById('meta-description');
+    if (metaDesc && t.metaDescription) {
+      metaDesc.setAttribute('content', t.metaDescription);
+    }
+    var ogTitle = document.getElementById('og-title');
+    if (ogTitle && t.ogTitle) {
+      ogTitle.setAttribute('content', t.ogTitle);
+    }
+    var ogDesc = document.getElementById('og-description');
+    if (ogDesc && t.ogDescription) {
+      ogDesc.setAttribute('content', t.ogDescription);
+    }
+    var twitterTitle = document.getElementById('twitter-title');
+    if (twitterTitle && t.ogTitle) {
+      twitterTitle.setAttribute('content', t.ogTitle);
+    }
+    var twitterDesc = document.getElementById('twitter-description');
+    if (twitterDesc && t.ogDescription) {
+      twitterDesc.setAttribute('content', t.ogDescription);
+    }
+
+    // Update image alt text
+    document.querySelectorAll('[data-i18n-alt]').forEach(function(el) {
+      var key = el.getAttribute('data-i18n-alt');
+      if (key && t[key]) {
+        el.setAttribute('alt', t[key]);
+      }
+    });
 
     document.querySelectorAll('[data-i18n]').forEach(function(el) {
       var key = el.getAttribute('data-i18n');

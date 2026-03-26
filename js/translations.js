@@ -4,6 +4,15 @@
  */
 window.REDDIT_TRANSLATIONS = {
   ua: {
+    // Meta tags (for SEO)
+    metaTitle: 'Anastasiia Haiduchenko | Reddit Marketing Expert - Трафік, Довіра, Продажі',
+    metaDescription: 'Reddit Manager - професійні послуги з управління Reddit: стратегія, контент, ведення сабредітів та репутаційний маркетинг для брендів. 4+ роки досвіду.',
+    ogTitle: 'Anastasiia Haiduchenko | Reddit Marketing Expert',
+    ogDescription: 'Перетворюю Reddit на канал трафіку, довіри й продажів для брендів. Стратегія, контент, ведення сабредітів.',
+    
+    // Image alt
+    profileAlt: 'Анастасія Гайдученко — Reddit Marketing Expert',
+    
     // Lang switcher
     langUA: 'UA',
     langEN: 'EN',
@@ -153,11 +162,33 @@ window.REDDIT_TRANSLATIONS = {
     floatingContact: 'Контакти',
     floatingContactAria: 'Перейти до контактів',
 
+    // FAQ
+    faqTitle: 'Часті питання',
+    faq1Question: 'Скільки коштують послуги з управління Reddit?',
+    faq1Answer: 'Вартість залежить від послуги: консультація — $300, пост — від $150, коментарі — від $100, ведення сабредіту — $900/місяць. Точна ціна визначається після обговорення вашої задачі.',
+    faq2Question: 'Як швидко я побачу результати на Reddit?',
+    faq2Answer: 'Перші результати видно протягом 1-2 тижнів. Reddit — платформа довгострокової довіри, тому системна робота дає найкращі результати через 2-3 місяці.',
+    faq3Question: 'Чи підходить Reddit для мого бізнесу?',
+    faq3Answer: 'Reddit ефективний для tech, SaaS, gaming, crypto, освіти, e-commerce та B2B. На консультації ми розберемо потенціал платформи саме для вашої ніші.',
+    faq4Question: 'Якими мовами ви працюєте?',
+    faq4Answer: 'Працюю українською (вільно) та англійською (B1). Контент для Reddit створюю переважно англійською, оскільки це основна мова платформи.',
+    faq5Question: 'Чи є гарантія результату?',
+    faq5Answer: 'Для видалення постів — оплата тільки за результат. Для інших послуг гарантую якісну роботу та прозору комунікацію, але фінальний результат залежить від ніші та реакції аудиторії.',
+
     // Footer
     footerCopy: '© 2026 Анастасія Гайдученко. Всі права захищені.'
   },
 
   en: {
+    // Meta tags (for SEO)
+    metaTitle: 'Anastasiia Haiduchenko | Reddit Marketing Expert - Traffic, Trust & Sales',
+    metaDescription: 'Professional Reddit marketing services: strategy, content, subreddit management, and reputation marketing for brands. 4+ years of experience.',
+    ogTitle: 'Anastasiia Haiduchenko | Reddit Marketing Expert',
+    ogDescription: 'I turn Reddit into a channel for traffic, trust, and sales for brands. Strategy, content, subreddit management.',
+    
+    // Image alt
+    profileAlt: 'Anastasiia Haiduchenko — Reddit Marketing Expert',
+    
     langUA: 'UA',
     langEN: 'EN',
 
@@ -290,6 +321,19 @@ window.REDDIT_TRANSLATIONS = {
     contactDescription: 'I’m ready to discuss your project. Reach out in whatever way suits you.',
     floatingContact: 'Contact',
     floatingContactAria: 'Go to contact',
+
+    // FAQ
+    faqTitle: 'Frequently Asked Questions',
+    faq1Question: 'How much do Reddit management services cost?',
+    faq1Answer: 'Prices depend on the service: consultation — $300, post — from $150, comments — from $100, subreddit management — $900/month. The exact price is determined after discussing your task.',
+    faq2Question: 'How quickly will I see results on Reddit?',
+    faq2Answer: 'First results are visible within 1-2 weeks. Reddit is a platform of long-term trust, so systematic work delivers the best results after 2-3 months.',
+    faq3Question: 'Is Reddit suitable for my business?',
+    faq3Answer: 'Reddit is effective for tech, SaaS, gaming, crypto, education, e-commerce, and B2B. During a consultation, we will analyze the platform potential specifically for your niche.',
+    faq4Question: 'What languages do you work in?',
+    faq4Answer: 'I work in Ukrainian (fluent) and English (B1). Content for Reddit is created primarily in English, as it is the main language of the platform.',
+    faq5Question: 'Is there a guarantee of results?',
+    faq5Answer: 'For post removal — payment only for results. For other services, I guarantee quality work and transparent communication, but the final result depends on the niche and audience reaction.',
 
     footerCopy: '© 2026 Anastasiia Haiduchenko. All rights reserved.'
   }
