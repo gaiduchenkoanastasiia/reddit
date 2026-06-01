@@ -148,6 +148,13 @@ document.addEventListener('DOMContentLoaded', function() {
         }, (journeySteps.length + index) * 80);
     });
 
+    const processPhases = document.querySelectorAll('.process__phase');
+    processPhases.forEach(function(phase, index) {
+        setTimeout(function() {
+            journeyReveal.observe(phase);
+        }, index * 100);
+    });
+
     // Observe contact links
     const contactLinks = document.querySelectorAll('.contact-link');
     contactLinks.forEach((link, index) => {

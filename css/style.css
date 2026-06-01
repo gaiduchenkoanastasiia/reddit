@@ -27,9 +27,10 @@
  * Section rhythm — 4 distinct treatments, one system:
  * 1. Hero: atmospheric (gradients, grid, full bleed)
  * 2. Journey: customer path funnel + benefit cards (why-reddit)
- * 3. Intro band: cutout photo + light copy (greeting)
- * 4. Structured: dense content, grid rhythm, clear boundaries (services)
- * 5. Soft contrast: elevated/muted band for CTAs (contact)
+ * 3. Process: work roadmap timeline (process)
+ * 4. Intro band: cutout photo + light copy (greeting)
+ * 5. Structured: dense content, grid rhythm, clear boundaries (services)
+ * 6. Soft contrast: elevated/muted band for CTAs (contact)
  * Footer: minimal anchor band
  */
 
@@ -360,6 +361,246 @@ body {
   max-width: 38.75rem;
   margin-inline: auto;
   text-wrap: pretty;
+}
+
+/* Process — work roadmap (not services) */
+.process {
+  position: relative;
+  background-color: var(--bg-primary);
+  border-top: 1px solid var(--border);
+  padding-top: calc(var(--spacing-unit) * 14);
+  padding-bottom: calc(var(--spacing-unit) * 14);
+  overflow: hidden;
+}
+
+.process::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(
+      ellipse 60% 40% at 80% 20%,
+      rgba(91, 124, 186, 0.08) 0%,
+      transparent 55%
+    ),
+    radial-gradient(
+      ellipse 50% 35% at 15% 80%,
+      rgba(125, 211, 252, 0.04) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.process__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 10);
+}
+
+.process__header {
+  text-align: center;
+  max-width: 46rem;
+  margin-inline: auto;
+}
+
+.process__title {
+  font-size: clamp(1.75rem, 3.2vw, 2.5rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.12;
+  letter-spacing: -0.02em;
+  margin: 0 0 calc(var(--spacing-unit) * 3);
+  text-wrap: balance;
+}
+
+.process__lead {
+  font-size: clamp(1.0625rem, 1.2vw, 1.1875rem);
+  color: var(--text-secondary);
+  line-height: 1.65;
+  margin: 0;
+  max-width: 44ch;
+  margin-inline: auto;
+}
+
+.process__timeline {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  max-width: 52rem;
+  margin-inline: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  position: relative;
+}
+
+.process__timeline::before {
+  content: "";
+  position: absolute;
+  left: calc(var(--spacing-unit) * 2.75);
+  top: calc(var(--spacing-unit) * 3);
+  bottom: calc(var(--spacing-unit) * 3);
+  width: 2px;
+  background: linear-gradient(
+    180deg,
+    var(--accent) 0%,
+    rgba(91, 124, 186, 0.35) 50%,
+    rgba(125, 211, 252, 0.25) 100%
+  );
+  border-radius: 1px;
+  pointer-events: none;
+}
+
+.process__phase {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: calc(var(--spacing-unit) * 4);
+  padding: calc(var(--spacing-unit) * 5) 0;
+  opacity: 0;
+  transform: translateY(24px);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
+}
+
+.process__phase.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.process__phase:first-child {
+  padding-top: 0;
+}
+
+.process__phase:last-child {
+  padding-bottom: 0;
+}
+
+.process__marker {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-start;
+  padding-top: calc(var(--spacing-unit) * 0.5);
+}
+
+.process__num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: calc(var(--spacing-unit) * 5.5);
+  height: calc(var(--spacing-unit) * 5.5);
+  padding: 0 calc(var(--spacing-unit) * 1.25);
+  border-radius: 10px;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  color: var(--accent-cyan);
+  background: var(--bg-card);
+  border: 1px solid rgba(125, 211, 252, 0.3);
+  box-shadow:
+    0 0 20px rgba(91, 124, 186, 0.15),
+    inset 0 1px 0 rgba(255, 255, 255, 0.06);
+}
+
+.process__body {
+  background-color: rgba(30, 41, 59, 0.45);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: calc(var(--spacing-unit) * 5) calc(var(--spacing-unit) * 5);
+  transition:
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.process__phase.is-visible .process__body:hover {
+  border-color: var(--border-subtle);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.18);
+}
+
+.process__phase-title {
+  font-size: clamp(1.25rem, 1.5vw, 1.375rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0 0 calc(var(--spacing-unit) * 2);
+  line-height: 1.25;
+}
+
+.process__phase-desc {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 0 calc(var(--spacing-unit) * 3);
+  max-width: 52ch;
+}
+
+.process__points {
+  list-style: none;
+  margin: 0;
+  padding: calc(var(--spacing-unit) * 3) 0 0;
+  border-top: 1px solid rgba(71, 85, 105, 0.45);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+}
+
+.process__points li {
+  position: relative;
+  padding-left: calc(var(--spacing-unit) * 2.75);
+  font-size: 0.9375rem;
+  color: var(--text-muted);
+  line-height: 1.45;
+}
+
+.process__points li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--accent);
+  box-shadow: 0 0 6px rgba(91, 124, 186, 0.45);
+}
+
+@media (min-width: 1024px) {
+  .process__timeline {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: calc(var(--spacing-unit) * 5);
+    row-gap: calc(var(--spacing-unit) * 5);
+    max-width: 56rem;
+  }
+
+  .process__timeline::before {
+    display: none;
+  }
+
+  .process__phase {
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-unit) * 3);
+    padding: 0;
+  }
+
+  .process__marker {
+    padding-top: 0;
+  }
+}
+
+.process__conclusion {
+  max-width: 50rem;
+  margin: clamp(3.75rem, 5vw, 5rem) auto 0;
+  padding: 0 calc(var(--spacing-unit) * 2);
+  font-size: clamp(1.0625rem, 1.35vw, 1.1875rem);
+  font-weight: 400;
+  color: var(--text-secondary);
+  line-height: 1.65;
+  text-align: center;
+  text-wrap: balance;
 }
 
 /* Greeting — short intro: cutout photo + light copy */
@@ -1540,6 +1781,38 @@ section {
     gap: clamp(2.75rem, 5vw, 3.25rem);
   }
 
+  .process {
+    padding-top: calc(var(--spacing-unit) * 10);
+    padding-bottom: calc(var(--spacing-unit) * 10);
+  }
+
+  .process__inner {
+    gap: calc(var(--spacing-unit) * 8);
+  }
+
+  .process__timeline::before {
+    left: calc(var(--spacing-unit) * 2.25);
+  }
+
+  .process__phase {
+    gap: calc(var(--spacing-unit) * 3);
+    padding: calc(var(--spacing-unit) * 4) 0;
+  }
+
+  .process__body {
+    padding: calc(var(--spacing-unit) * 4);
+  }
+
+  .process__points {
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-unit) * 1.25);
+  }
+
+  .process__conclusion {
+    margin-top: clamp(3rem, 6vw, 4rem);
+    font-size: 1rem;
+  }
+
   .journey__inner {
     gap: calc(var(--spacing-unit) * 8);
   }
@@ -1807,7 +2080,8 @@ section {
 
 @media (prefers-reduced-motion: reduce) {
   .journey__step,
-  .journey__card {
+  .journey__card,
+  .process__phase {
     opacity: 1;
     transform: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;

@@ -48,6 +48,41 @@ window.REDDIT_TRANSLATIONS = {
     bridgeSubtitle:
       'Аналіз ніші, стратегія присутності, контент, репутація та системна робота з видимістю бренду.',
 
+    processTitle: 'Як виглядає робота зі мною',
+    processLead:
+      'Кожен проєкт починається з аналізу ніші та завершується системною роботою над видимістю бренду, репутацією та попитом.',
+    process1Title: 'Аналіз',
+    process1Desc:
+      'Знаходжу, де ваша аудиторія вже шукає відповіді та приймає рішення.',
+    process1Points: [
+      'аналіз ніші',
+      'карта сабредітів',
+      'аналіз конкурентів',
+      'оцінка потенціалу Reddit',
+    ],
+    process2Title: 'Стратегія',
+    process2Desc: 'Будую план присутності під ваш бізнес та цілі.',
+    process2Points: [
+      'контентна стратегія',
+      'репутаційна стратегія',
+      'бренд-сабредіт',
+      'точки росту',
+    ],
+    process3Title: 'Запуск',
+    process3Desc: 'Запускаємо систему та починаємо формувати видимість бренду.',
+    process3Points: [
+      'брендова присутність',
+      'контент',
+      'робота з обговореннями',
+      'робота зі згадками',
+    ],
+    process4Title: 'Аналітика та оптимізація',
+    process4Desc:
+      'Відстежуємо результати, коригуємо стратегію та масштабуємо те, що приносить результат.',
+    process4Points: ['видимість бренду', 'згадки', 'трафік', 'репутація'],
+    processConclusion:
+      'Кожен бізнес отримує різний план роботи. Набір інструментів залежить від ніші, конкуренції та цілей проєкту.',
+
     // Greeting / About
     greetingTitle: 'Reddit під ключ: від довіри до трафіку й продажів',
     greetingLead: 'Працюю з Reddit понад 4 роки й беру напрям під ключ: акаунти, сабредіти, контент і репутація. Фокус завжди один — результат для бізнесу.',
@@ -241,6 +276,41 @@ window.REDDIT_TRANSLATIONS = {
       'I help brands influence what potential customers find on Reddit when choosing a product.',
     bridgeSubtitle:
       'Niche analysis, presence strategy, content, reputation, and systematic work on brand visibility.',
+
+    processTitle: 'What working with me looks like',
+    processLead:
+      'Every project starts with niche analysis and ends with systematic work on brand visibility, reputation, and demand.',
+    process1Title: 'Analysis',
+    process1Desc:
+      'I find where your audience already looks for answers and makes decisions.',
+    process1Points: [
+      'niche analysis',
+      'subreddit map',
+      'competitor analysis',
+      'Reddit potential assessment',
+    ],
+    process2Title: 'Strategy',
+    process2Desc: 'I build a presence plan aligned with your business and goals.',
+    process2Points: [
+      'content strategy',
+      'reputation strategy',
+      'brand subreddit',
+      'growth opportunities',
+    ],
+    process3Title: 'Launch',
+    process3Desc: 'We launch the system and start building brand visibility.',
+    process3Points: [
+      'brand presence',
+      'content',
+      'engagement in discussions',
+      'mention management',
+    ],
+    process4Title: 'Analytics & optimization',
+    process4Desc:
+      'We track results, adjust strategy, and scale what drives outcomes.',
+    process4Points: ['brand visibility', 'mentions', 'traffic', 'reputation'],
+    processConclusion:
+      'Every business gets a tailored work plan. The toolkit depends on your niche, competition, and project goals.',
 
     greetingTitle: 'Reddit under one roof: from trust to traffic and sales',
     greetingLead: 'I’ve been working with Reddit for over 4 years and run the channel end-to-end: accounts, subreddits, content, and reputation. The focus is always the same—results for your business.',
