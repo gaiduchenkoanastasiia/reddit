@@ -124,6 +124,30 @@ document.addEventListener('DOMContentLoaded', function() {
         }, index * 100);
     });
 
+    // Journey funnel steps and benefit cards
+    const journeyReveal = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('is-visible');
+                journeyReveal.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const journeySteps = document.querySelectorAll('.journey__step');
+    journeySteps.forEach(function(step, index) {
+        setTimeout(function() {
+            journeyReveal.observe(step);
+        }, index * 80);
+    });
+
+    const journeyCards = document.querySelectorAll('.journey__card');
+    journeyCards.forEach(function(card, index) {
+        setTimeout(function() {
+            journeyReveal.observe(card);
+        }, (journeySteps.length + index) * 80);
+    });
+
     // Observe contact links
     const contactLinks = document.querySelectorAll('.contact-link');
     contactLinks.forEach((link, index) => {

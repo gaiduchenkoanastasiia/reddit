@@ -27,6 +27,27 @@ window.REDDIT_TRANSLATIONS = {
     heroValue2: 'Стратегія, а не разові пости',
     heroValue3: 'Фокус на довіру й продажі',
 
+    // Customer journey (after hero)
+    journeyTitle: 'Reddit став частиною шляху до покупки',
+    journeyLead: 'Перед покупкою люди шукають відгуки, порівняння, альтернативи та реальний досвід інших користувачів. Саме тому обговорення Reddit все частіше займають верхні позиції у Google.',
+    journeyFunnelAria: 'Шлях клієнта від пошуку до покупки',
+    journeyStep1: 'Google Search',
+    journeyStep2: 'Reddit Discussion',
+    journeyStep3: 'Brand Mention',
+    journeyStep4: 'Website Visit',
+    journeyStep5: 'Purchase',
+    journeyCard1Title: 'Репутація',
+    journeyCard1Text: 'Контролюйте, що потенційні клієнти бачать про бренд під час дослідження ринку.',
+    journeyCard2Title: 'Видимість',
+    journeyCard2Text: 'Отримуйте присутність у Reddit-обговореннях та пошуковій видачі Google.',
+    journeyCard3Title: 'Попит',
+    journeyCard3Text: 'Перетворюйте обговорення, рекомендації та згадки на трафік і нових клієнтів.',
+
+    bridgeMessage:
+      'Я допомагаю брендам впливати на те, що потенційні клієнти знаходять на Reddit під час вибору продукту.',
+    bridgeSubtitle:
+      'Аналіз ніші, стратегія присутності, контент, репутація та системна робота з видимістю бренду.',
+
     // Greeting / About
     greetingTitle: 'Reddit під ключ: від довіри до трафіку й продажів',
     greetingLead: 'Працюю з Reddit понад 4 роки й беру напрям під ключ: акаунти, сабредіти, контент і репутація. Фокус завжди один — результат для бізнесу.',
@@ -200,6 +221,26 @@ window.REDDIT_TRANSLATIONS = {
     heroValue1: 'Reddit as a growth channel',
     heroValue2: 'Strategy, not one-off posts',
     heroValue3: 'Focus on trust and sales',
+
+    journeyTitle: 'Reddit is now part of the path to purchase',
+    journeyLead: 'Before they buy, people look for reviews, comparisons, alternatives, and real experiences from other users. That is why Reddit discussions increasingly rank at the top of Google.',
+    journeyFunnelAria: 'Customer path from search to purchase',
+    journeyStep1: 'Google Search',
+    journeyStep2: 'Reddit Discussion',
+    journeyStep3: 'Brand Mention',
+    journeyStep4: 'Website Visit',
+    journeyStep5: 'Purchase',
+    journeyCard1Title: 'Reputation',
+    journeyCard1Text: 'Control what potential customers see about your brand while they research the market.',
+    journeyCard2Title: 'Visibility',
+    journeyCard2Text: 'Show up in Reddit conversations and in Google search results.',
+    journeyCard3Title: 'Demand',
+    journeyCard3Text: 'Turn discussions, recommendations, and mentions into traffic and new customers.',
+
+    bridgeMessage:
+      'I help brands influence what potential customers find on Reddit when choosing a product.',
+    bridgeSubtitle:
+      'Niche analysis, presence strategy, content, reputation, and systematic work on brand visibility.',
 
     greetingTitle: 'Reddit under one roof: from trust to traffic and sales',
     greetingLead: 'I’ve been working with Reddit for over 4 years and run the channel end-to-end: accounts, subreddits, content, and reputation. The focus is always the same—results for your business.',

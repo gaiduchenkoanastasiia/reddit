@@ -26,9 +26,10 @@
 /*
  * Section rhythm — 4 distinct treatments, one system:
  * 1. Hero: atmospheric (gradients, grid, full bleed)
- * 2. Intro band: cutout photo + light copy (greeting)
- * 3. Structured: dense content, grid rhythm, clear boundaries (services)
- * 4. Soft contrast: elevated/muted band for CTAs (contact)
+ * 2. Journey: customer path funnel + benefit cards (why-reddit)
+ * 3. Intro band: cutout photo + light copy (greeting)
+ * 4. Structured: dense content, grid rhythm, clear boundaries (services)
+ * 5. Soft contrast: elevated/muted band for CTAs (contact)
  * Footer: minimal anchor band
  */
 
@@ -114,6 +115,251 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 calc(var(--spacing-unit) * 3);
+}
+
+/* Journey — customer path after hero */
+.journey {
+  position: relative;
+  background-color: var(--bg-soft);
+  border-top: 1px solid var(--border);
+  padding-top: calc(var(--spacing-unit) * 12);
+  padding-bottom: clamp(5rem, 10vw, 6.25rem);
+  overflow: hidden;
+}
+
+.journey::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(
+    ellipse 80% 50% at 50% 0%,
+    rgba(91, 124, 186, 0.1) 0%,
+    transparent 55%
+  );
+  pointer-events: none;
+}
+
+.journey__inner {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 10);
+}
+
+.journey__header {
+  text-align: center;
+  max-width: 52rem;
+  margin-inline: auto;
+}
+
+.journey__title {
+  font-size: clamp(2rem, 3.8vw, 3.25rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+  margin: 0 0 calc(var(--spacing-unit) * 3);
+  text-wrap: balance;
+}
+
+.journey__lead {
+  font-size: clamp(1.125rem, 1.15vw, 1.25rem);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  margin: 0 auto;
+  max-width: 48ch;
+}
+
+.journey__funnel {
+  list-style: none;
+  margin: 0;
+  padding: calc(var(--spacing-unit) * 2) 0;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: calc(var(--spacing-unit) * 1);
+  max-width: 56rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.journey__step {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: calc(var(--spacing-unit) * 1.5);
+  position: relative;
+  padding: 0 calc(var(--spacing-unit) * 1);
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease;
+}
+
+.journey__step.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.journey__step:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  top: calc(var(--spacing-unit) * 2.25);
+  right: calc(var(--spacing-unit) * -2);
+  width: calc(100% - var(--spacing-unit) * 4);
+  max-width: 4rem;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    var(--accent) 0%,
+    rgba(125, 211, 252, 0.5) 100%
+  );
+  transform: translateX(50%);
+  pointer-events: none;
+}
+
+.journey__step-num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: calc(var(--spacing-unit) * 4.5);
+  height: calc(var(--spacing-unit) * 4.5);
+  border-radius: 50%;
+  font-size: 0.8125rem;
+  font-weight: 600;
+  color: var(--accent-cyan);
+  background: var(--accent-soft);
+  border: 1px solid rgba(125, 211, 252, 0.25);
+  box-shadow: 0 0 16px rgba(91, 124, 186, 0.2);
+}
+
+.journey__step-label {
+  font-size: clamp(0.75rem, 1.1vw, 0.875rem);
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.35;
+  letter-spacing: 0.02em;
+}
+
+.journey__cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: calc(var(--spacing-unit) * 4);
+  max-width: 56rem;
+  margin-inline: auto;
+  width: 100%;
+}
+
+.journey__card {
+  background-color: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  padding: calc(var(--spacing-unit) * 5);
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 2);
+  opacity: 0;
+  transform: translateY(20px);
+  transition:
+    opacity 0.65s ease,
+    transform 0.65s ease,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.journey__card.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.journey__card:hover {
+  border-color: var(--border-subtle);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  transform: translateY(-2px);
+}
+
+.journey__card.is-visible:hover {
+  transform: translateY(-2px);
+}
+
+.journey__card-title {
+  font-size: clamp(1.25rem, 1.2vw, 1.375rem);
+  font-weight: 700;
+  color: var(--text-primary);
+  margin: 0;
+  line-height: 1.25;
+}
+
+.journey__card-text {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  line-height: 1.55;
+  margin: 0;
+}
+
+.journey__bottom {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(3rem, 3.5vw, 3.5rem);
+  width: 100%;
+}
+
+.journey__conclusion {
+  position: relative;
+  text-align: center;
+  max-width: 48.75rem;
+  margin-inline: auto;
+  width: 100%;
+  padding: calc(var(--spacing-unit) * 1) 0;
+  display: flex;
+  flex-direction: column;
+  gap: calc(var(--spacing-unit) * 2.5);
+}
+
+.journey__conclusion::before {
+  content: "";
+  position: absolute;
+  inset: -15% -8%;
+  background: radial-gradient(
+    ellipse 55% 45% at 50% 50%,
+    rgba(91, 124, 186, 0.06) 0%,
+    transparent 68%
+  );
+  pointer-events: none;
+  z-index: 0;
+}
+
+.journey__conclusion-message,
+.journey__conclusion-subtitle {
+  position: relative;
+  z-index: 1;
+  margin: 0;
+}
+
+.journey__conclusion-message {
+  font-size: clamp(1.375rem, 1.65vw, 1.75rem);
+  font-weight: 600;
+  color: var(--text-primary);
+  line-height: 1.35;
+  letter-spacing: -0.01em;
+  max-width: 48.75rem;
+  margin-inline: auto;
+  text-wrap: balance;
+}
+
+.journey__conclusion-subtitle {
+  font-size: clamp(0.9375rem, 1vw, 1rem);
+  color: var(--text-secondary);
+  line-height: 1.6;
+  max-width: 38.75rem;
+  margin-inline: auto;
+  text-wrap: pretty;
 }
 
 /* Greeting — short intro: cutout photo + light copy */
@@ -1277,6 +1523,64 @@ section {
     padding: calc(var(--spacing-unit) * 10) calc(var(--spacing-unit) * 2);
   }
 
+  .journey {
+    padding-top: calc(var(--spacing-unit) * 10);
+    padding-bottom: clamp(5rem, 12vw, 6.25rem);
+  }
+
+  .journey__title {
+    font-size: clamp(1.75rem, 6vw, 2.25rem);
+  }
+
+  .journey__conclusion-message {
+    font-size: clamp(1.25rem, 4.5vw, 1.5rem);
+  }
+
+  .journey__bottom {
+    gap: clamp(2.75rem, 5vw, 3.25rem);
+  }
+
+  .journey__inner {
+    gap: calc(var(--spacing-unit) * 8);
+  }
+
+  .journey__funnel {
+    flex-direction: column;
+    align-items: center;
+    gap: calc(var(--spacing-unit) * 5);
+    max-width: 20rem;
+  }
+
+  .journey__step {
+    width: 100%;
+    padding: 0;
+  }
+
+  .journey__step:not(:last-child)::after {
+    top: auto;
+    bottom: calc(var(--spacing-unit) * -2.75);
+    left: 50%;
+    right: auto;
+    width: 1px;
+    height: calc(var(--spacing-unit) * 2);
+    max-width: none;
+    transform: translateX(-50%);
+    background: linear-gradient(
+      180deg,
+      var(--accent) 0%,
+      rgba(125, 211, 252, 0.45) 100%
+    );
+  }
+
+  .journey__cards {
+    grid-template-columns: 1fr;
+    gap: calc(var(--spacing-unit) * 3);
+  }
+
+  .journey__card {
+    padding: calc(var(--spacing-unit) * 4);
+  }
+
   .greeting {
     padding: calc(var(--spacing-unit) * 7) calc(var(--spacing-unit) * 2);
     padding-bottom: calc(var(--spacing-unit) * 8);
@@ -1414,6 +1718,18 @@ section {
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
+  .journey__funnel {
+    gap: calc(var(--spacing-unit) * 0.5);
+  }
+
+  .journey__step-label {
+    font-size: 0.75rem;
+  }
+
+  .journey__cards {
+    gap: calc(var(--spacing-unit) * 3);
+  }
+
   .greeting-layout {
     grid-template-columns: minmax(0, 46%) minmax(240px, 1fr);
     column-gap: clamp(2rem, 5vw, 4rem);
@@ -1486,6 +1802,20 @@ section {
   .tier-price,
   .service-price {
     font-size: 1.5rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .journey__step,
+  .journey__card {
+    opacity: 1;
+    transform: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .journey__card:hover,
+  .journey__card.is-visible:hover {
+    transform: none;
   }
 }
 
