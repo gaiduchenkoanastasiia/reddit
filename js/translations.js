@@ -10,12 +10,58 @@ window.REDDIT_TRANSLATIONS = {
     ogTitle: 'Anastasiia Haiduchenko | Reddit Marketing Expert',
     ogDescription: 'Перетворюю Reddit на канал трафіку, довіри й продажів для брендів. Стратегія, контент, ведення сабредітів.',
     
-    // Image alt
-    profileAlt: 'Анастасія Гайдученко — Reddit Marketing Expert',
-    
     // Lang switcher
     langUA: 'UA',
     langEN: 'EN',
+
+    // Navigation
+    navBrand: 'Anastasiia Haiduchenko',
+    navServices: 'Послуги',
+    navWork: 'Результати роботи',
+    navAbout: 'Про мене',
+    navBlog: 'Блог',
+    navContact: 'Контакти',
+    navMenuLabel: 'Головна навігація',
+    navMenuToggle: 'Відкрити меню',
+
+    // Inner pages
+    pageServicesMetaTitle: 'Послуги | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageServicesMetaDescription: 'Reddit-маркетинг під ключ: стратегія, контент, ведення сабредітів та репутаційна робота для брендів.',
+    pageServicesEyebrow: 'Послуги',
+    pageServicesTitle: 'Послуги Reddit-маркетингу',
+    pageServicesLead: 'Стратегія, контент, ведення сабредітів і репутаційна робота — під ваш бізнес і цілі.',
+    pageServicesNoticeTitle: 'Сторінка оновлюється',
+    pageServicesNoticeText: 'Зараз я працюю над розширенням цього розділу. Найближчим часом тут з\'являться детальні описи послуг, приклади робіт, результати проєктів та відповіді на поширені запитання.',
+    pageServicesNoticeSubtext: 'Поки що ви можете ознайомитися з основними напрямами роботи нижче або зв\'язатися зі мною для консультації.',
+
+    pageComingSoonTitle: 'Розділ активно наповнюється',
+    pageComingSoonText: 'Зараз я працюю над розширенням цього розділу. Найближчим часом тут з\'являться нові матеріали, приклади робіт, дослідження та корисний контент про Reddit для бізнесу.',
+    pageComingSoonSubtext: 'Поки що ви можете ознайомитися з інформацією на головній сторінці або зв\'язатися зі мною для консультації.',
+
+    pageWorkMetaTitle: 'Результати роботи | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageWorkMetaDescription: 'Кейси, приклади матеріалів і результати Reddit-кампаній для клієнтів.',
+    pageWorkEyebrow: 'Результати',
+    pageWorkTitle: 'Результати роботи',
+    pageWorkLead: 'Приклади матеріалів, кейсів і результатів, які отримують клієнти під час роботи зі мною.',
+
+    pageAboutMetaTitle: 'Про мене | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageAboutMetaDescription: 'Анастасія Гайдученко — Reddit Marketing Expert з 4+ роками досвіду роботи з брендами.',
+    pageAboutEyebrow: 'Експерт',
+    pageAboutTitle: 'Про мене',
+    pageAboutLead: 'Працюю з Reddit понад 4 роки й допомагаю брендам будувати видимість, довіру та попит через платформу.',
+
+    pageBlogMetaTitle: 'Блог | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageBlogMetaDescription: 'Інсайти про Reddit-маркетинг, стратегію, контент і зростання брендів.',
+    pageBlogEyebrow: 'Блог',
+    pageBlogTitle: 'Блог',
+    pageBlogLead: 'Практичні матеріали про Reddit як канал трафіку, довіри й продажів для брендів.',
+
+    pageContactMetaTitle: 'Контакти | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageContactMetaDescription: 'Звʼяжіться для консультації або обговорення Reddit-проєкту.',
+    pageContactEyebrow: 'Контакти',
+    pageContactTitle: 'Контакти',
+    pageContactLead: 'Готова обговорити ваш проєкт. Напишіть у зручний для вас спосіб.',
+    pageContactPlaceholder: 'Окрема сторінка контактів зʼявиться тут незабаром. Поки що скористайтесь формою на головній.',
 
     // Hero
     heroBadge: 'Reddit для брендів',
@@ -82,13 +128,6 @@ window.REDDIT_TRANSLATIONS = {
     process4Points: ['видимість бренду', 'згадки', 'трафік', 'репутація'],
     processConclusion:
       'Кожен бізнес отримує різний план роботи. Набір інструментів залежить від ніші, конкуренції та цілей проєкту.',
-
-    // Greeting / About
-    greetingTitle: 'Reddit під ключ: від довіри до трафіку й продажів',
-    greetingLead: 'Працюю з Reddit понад 4 роки й беру напрям під ключ: акаунти, сабредіти, контент і репутація. Фокус завжди один — результат для бізнесу.',
-    greetingPoint1: 'Стратегія під нішу — без шаблонних рішень для всіх',
-    greetingPoint2: 'Повний супровід — від запуску до репутаційної роботи',
-    greetingPoint3: 'Фокус на результаті — без проєктів «для присутності»',
 
     // Services section
     servicesTitle: 'Мої послуги',
@@ -242,11 +281,58 @@ window.REDDIT_TRANSLATIONS = {
     ogTitle: 'Anastasiia Haiduchenko | Reddit Marketing Expert',
     ogDescription: 'I turn Reddit into a channel for traffic, trust, and sales for brands. Strategy, content, subreddit management.',
     
-    // Image alt
-    profileAlt: 'Anastasiia Haiduchenko — Reddit Marketing Expert',
-    
+    // Lang switcher
     langUA: 'UA',
     langEN: 'EN',
+
+    // Navigation
+    navBrand: 'Anastasiia Haiduchenko',
+    navServices: 'Services',
+    navWork: 'Work results',
+    navAbout: 'About me',
+    navBlog: 'Blog',
+    navContact: 'Contact',
+    navMenuLabel: 'Main navigation',
+    navMenuToggle: 'Open menu',
+
+    // Inner pages
+    pageServicesMetaTitle: 'Services | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageServicesMetaDescription: 'End-to-end Reddit marketing: strategy, content, subreddit management, and reputation work for brands.',
+    pageServicesEyebrow: 'Services',
+    pageServicesTitle: 'Reddit marketing services',
+    pageServicesLead: 'Strategy, content, subreddit management, and reputation work—tailored to your business and goals.',
+    pageServicesNoticeTitle: 'Page in progress',
+    pageServicesNoticeText: 'I am currently expanding this section. Detailed service descriptions, work samples, project results, and answers to common questions will appear here soon.',
+    pageServicesNoticeSubtext: 'For now, you can review the main service areas below or contact me for a consultation.',
+
+    pageComingSoonTitle: 'This section is actively being built',
+    pageComingSoonText: 'I am currently expanding this section. New materials, work samples, research, and useful content about Reddit for business will appear here soon.',
+    pageComingSoonSubtext: 'For now, you can explore the home page or contact me for a consultation.',
+
+    pageWorkMetaTitle: 'Work results | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageWorkMetaDescription: 'Case studies, sample deliverables, and results from Reddit campaigns for clients.',
+    pageWorkEyebrow: 'Results',
+    pageWorkTitle: 'Work results',
+    pageWorkLead: 'Sample materials, case studies, and outcomes clients receive when working with me.',
+
+    pageAboutMetaTitle: 'About me | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageAboutMetaDescription: 'Anastasiia Haiduchenko — Reddit Marketing Expert with 4+ years of experience working with brands.',
+    pageAboutEyebrow: 'Expert',
+    pageAboutTitle: 'About me',
+    pageAboutLead: 'I have worked with Reddit for over 4 years, helping brands build visibility, trust, and demand through the platform.',
+
+    pageBlogMetaTitle: 'Blog | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageBlogMetaDescription: 'Insights on Reddit marketing, strategy, content, and brand growth.',
+    pageBlogEyebrow: 'Blog',
+    pageBlogTitle: 'Blog',
+    pageBlogLead: 'Practical material on Reddit as a channel for traffic, trust, and sales for brands.',
+
+    pageContactMetaTitle: 'Contact | Anastasiia Haiduchenko — Reddit Marketing Expert',
+    pageContactMetaDescription: 'Get in touch for a consultation or to discuss your Reddit project.',
+    pageContactEyebrow: 'Contact',
+    pageContactTitle: 'Contact',
+    pageContactLead: 'I am ready to discuss your project. Reach out in whatever way suits you.',
+    pageContactPlaceholder: 'A dedicated contact page will appear here soon. For now, use the form on the home page.',
 
     heroBadge: 'Reddit for brands',
     heroTitle: 'I turn Reddit into a channel for traffic, trust, and sales',
@@ -311,12 +397,6 @@ window.REDDIT_TRANSLATIONS = {
     process4Points: ['brand visibility', 'mentions', 'traffic', 'reputation'],
     processConclusion:
       'Every business gets a tailored work plan. The toolkit depends on your niche, competition, and project goals.',
-
-    greetingTitle: 'Reddit under one roof: from trust to traffic and sales',
-    greetingLead: 'I’ve been working with Reddit for over 4 years and run the channel end-to-end: accounts, subreddits, content, and reputation. The focus is always the same—results for your business.',
-    greetingPoint1: 'Strategy tailored to your niche—no one-size-fits-all',
-    greetingPoint2: 'Full support—from launch to reputation work',
-    greetingPoint3: 'Focus on results—no “presence for the sake of it” projects',
 
     servicesTitle: 'My services',
     btnDetails: 'Details',

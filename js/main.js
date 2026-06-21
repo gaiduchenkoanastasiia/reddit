@@ -54,7 +54,7 @@ function initModals() {
         }
     });
 
-    document.querySelectorAll('.modal-cta a[href^="#"]').forEach(function(link) {
+    document.querySelectorAll('.modal-cta a[href]').forEach(function(link) {
         link.addEventListener('click', function() {
             const modal = this.closest('.modal');
             if (modal) closeModal(modal);
@@ -66,14 +66,13 @@ function initModals() {
 document.addEventListener('DOMContentLoaded', function() {
     initModals();
 
-    // Handle smooth scroll for anchor links
+    // Smooth scroll for in-page anchors (if any remain on the home page)
     const anchorLinks = document.querySelectorAll('a[href^="#"]');
     
     anchorLinks.forEach(link => {
         link.addEventListener('click', function(e) {
             const href = this.getAttribute('href');
             
-            // Skip if it's just "#"
             if (href === '#') {
                 return;
             }
@@ -183,30 +182,4 @@ document.addEventListener('DOMContentLoaded', function() {
             lastScroll = currentScroll;
         }, { passive: true });
     }
-
-    // Add active state to navigation (if needed in future)
-    const sections = document.querySelectorAll('section[id]');
-    const navLinks = document.querySelectorAll('a[href^="#"]');
-    
-    function highlightNavigation() {
-        let current = '';
-        
-        sections.forEach(section => {
-            const sectionTop = section.offsetTop;
-            const sectionHeight = section.clientHeight;
-            
-            if (window.pageYOffset >= sectionTop - 200) {
-                current = section.getAttribute('id');
-            }
-        });
-        
-        navLinks.forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === `#${current}`) {
-                link.classList.add('active');
-            }
-        });
-    }
-    
-    window.addEventListener('scroll', highlightNavigation, { passive: true });
 });

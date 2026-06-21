@@ -60,19 +60,39 @@
     return div.innerHTML;
   }
 
+  function getPageKey() {
+    return document.documentElement.getAttribute('data-page') || '';
+  }
+
+  function getPageTranslationKey(suffix) {
+    var page = getPageKey();
+    if (!page || page === 'home') return null;
+    return 'page' + page.charAt(0).toUpperCase() + page.slice(1) + suffix;
+  }
+
   function applyLang(lang) {
     var t = getT(lang);
     if (!t || !document.querySelector) return;
 
     document.documentElement.lang = lang === 'en' ? 'en' : 'uk';
 
+    var pageTitleKey = getPageTranslationKey('MetaTitle');
+    var pageDescKey = getPageTranslationKey('MetaDescription');
+
     // Update meta tags for SEO
-    if (t.metaTitle) {
+    if (pageTitleKey && t[pageTitleKey]) {
+      document.title = t[pageTitleKey];
+    } else if (t.metaTitle) {
       document.title = t.metaTitle;
     }
+
     var metaDesc = document.getElementById('meta-description');
-    if (metaDesc && t.metaDescription) {
-      metaDesc.setAttribute('content', t.metaDescription);
+    if (metaDesc) {
+      if (pageDescKey && t[pageDescKey]) {
+        metaDesc.setAttribute('content', t[pageDescKey]);
+      } else if (t.metaDescription) {
+        metaDesc.setAttribute('content', t.metaDescription);
+      }
     }
     var ogTitle = document.getElementById('og-title');
     if (ogTitle && t.ogTitle) {
