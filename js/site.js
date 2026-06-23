@@ -11,7 +11,32 @@
     { id: 'contact', path: 'contact/', labelKey: 'navContact' },
   ];
 
+  function isLocalFile() {
+    return window.location.protocol === 'file:';
+  }
+
+  function getLinkPrefix() {
+    var page = document.documentElement.getAttribute('data-page');
+    return page && page !== 'home' ? '../' : '';
+  }
+
+  function normalizeLocalPath(relativePath) {
+    if (!relativePath) {
+      return 'index.html';
+    }
+
+    if (relativePath.charAt(relativePath.length - 1) === '/') {
+      return relativePath + 'index.html';
+    }
+
+    return relativePath;
+  }
+
   function getSiteBase() {
+    if (isLocalFile()) {
+      return '';
+    }
+
     var path = window.location.pathname;
     if (/^\/reddit(\/|$)/.test(path)) {
       return '/reddit/';
@@ -20,8 +45,17 @@
   }
 
   function siteUrl(relativePath) {
-    var base = getSiteBase();
     var path = (relativePath || '').replace(/^\//, '');
+
+    if (isLocalFile()) {
+      var prefix = getLinkPrefix();
+      if (!path) {
+        return prefix ? '../index.html' : 'index.html';
+      }
+      return prefix + normalizeLocalPath(path);
+    }
+
+    var base = getSiteBase();
     return base + path;
   }
 
@@ -31,6 +65,11 @@
   }
 
   function getCurrentPage() {
+    var page = document.documentElement.getAttribute('data-page');
+    if (page) {
+      return page;
+    }
+
     var path = window.location.pathname.replace(/\/$/, '');
     var base = getSiteBase().replace(/\/$/, '');
     var relative = path.replace(base, '').replace(/^\//, '');
@@ -190,12 +229,101 @@
     });
   }
 
+  function initPageTransitions() {
+    var useNativeTransitions = supportsCrossDocumentViewTransitions();
+    var prefetched = Object.create(null);
+
+    if (!useNativeTransitions) {
+      document.addEventListener('click', function (event) {
+        var anchor = event.target.closest('a');
+        if (!anchor || !isInternalNavigationLink(anchor)) return;
+        if (isModifiedClick(event)) return;
+
+        var destination = anchor.href;
+        if (destination === window.location.href) return;
+
+        event.preventDefault();
+        sessionStorage.setItem('reddit-nav', '1');
+        document.documentElement.classList.add('page-is-leaving');
+        window.setTimeout(function () {
+          window.location.assign(destination);
+        }, PAGE_LEAVE_MS);
+      });
+
+      if (sessionStorage.getItem('reddit-nav')) {
+        sessionStorage.removeItem('reddit-nav');
+        window.scrollTo(0, 0);
+      }
+
+      requestAnimationFrame(function () {
+        requestAnimationFrame(function () {
+          document.documentElement.classList.add('is-page-ready');
+        });
+      });
+    }
+
+    document.addEventListener('mouseover', function (event) {
+      var anchor = event.target.closest('a');
+      if (!anchor || !isInternalNavigationLink(anchor)) return;
+
+      var href = anchor.href;
+      if (prefetched[href]) return;
+
+      prefetched[href] = true;
+      var prefetchLink = document.createElement('link');
+      prefetchLink.rel = 'prefetch';
+      prefetchLink.href = href;
+      document.head.appendChild(prefetchLink);
+    });
+  }
+
+  var PAGE_LEAVE_MS = 240;
+
+  function supportsCrossDocumentViewTransitions() {
+    return (
+      typeof HTMLScriptElement !== 'undefined' &&
+      typeof HTMLScriptElement.supports === 'function' &&
+      HTMLScriptElement.supports('view-transition', 'cross-document')
+    );
+  }
+
+  function isModifiedClick(event) {
+    return (
+      event.metaKey ||
+      event.ctrlKey ||
+      event.shiftKey ||
+      event.altKey ||
+      event.button !== 0
+    );
+  }
+
+  function isInternalNavigationLink(anchor) {
+    if (!anchor || anchor.tagName !== 'A') return false;
+    if (anchor.hasAttribute('download')) return false;
+    if (anchor.target && anchor.target !== '_self') return false;
+
+    var href = anchor.getAttribute('href');
+    if (!href || href.charAt(0) === '#') return false;
+    if (/^(mailto:|tel:|javascript:)/i.test(href)) return false;
+
+    try {
+      var url = new URL(anchor.href, window.location.href);
+      if (isLocalFile()) {
+        return url.protocol === 'file:';
+      }
+      return url.origin === window.location.origin;
+    } catch (error) {
+      return false;
+    }
+  }
+
   function init() {
     renderHeader();
     renderFooter();
     fixSiteLinks();
     initHeaderScroll();
     initMobileNav();
+    initPageTransitions();
   }
 
   if (document.readyState === 'loading') {

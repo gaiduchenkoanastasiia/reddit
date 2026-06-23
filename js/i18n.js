@@ -191,6 +191,10 @@
       btnEN.classList.toggle('is-active', lang === 'en');
       btnEN.setAttribute('aria-pressed', lang === 'en' ? 'true' : 'false');
     }
+
+    if (window.RedditServicesPage && window.RedditServicesPage.refresh) {
+      window.RedditServicesPage.refresh();
+    }
   }
 
   function setLang(lang) {
