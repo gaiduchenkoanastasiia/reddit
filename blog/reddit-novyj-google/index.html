@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="uk" data-page="blog">
+<html lang="uk" data-page="blog-article">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,23 +7,23 @@
     <meta name="color-scheme" content="dark" />
     <style>html{background-color:#0a0705;color-scheme:dark}body{background-color:#0a0705;color:#f7efe8}</style>
     <script>try{if(sessionStorage.getItem('reddit-nav'))document.documentElement.classList.add('nav-enter');}catch(e){}</script>
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-    <link rel="stylesheet" href="../css/style.css" />
-    <title>Блог | Anastasiia Haiduchenko</title>
-    <meta name="description" id="meta-description" content="Інсайти про Reddit-маркетинг, стратегію та зростання брендів." />
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>Reddit став новим Google | Anastasiia Haiduchenko</title>
+    <meta name="description" id="meta-description" content="Чому Reddit впливає на рішення про покупку ще до візиту на сайт бренду." />
     <meta name="author" content="Anastasiia Haiduchenko" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://gaiduchenkoanastasiia.github.io/reddit/blog/" />
+    <link rel="canonical" href="https://gaiduchenkoanastasiia.github.io/reddit/blog/reddit-novyj-google/" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
-  <body class="page-inner page-blog">
-    <script src="../js/lang-boot.js"></script>
-    <script src="../js/lang-chrome.js"></script>
+  <body class="page-inner page-blog-article">
+    <script src="../../js/lang-boot.js"></script>
+    <script src="../../js/lang-chrome.js"></script>
     <header class="site-header" id="site-header">
       <div class="container site-header__inner">
-        <a href="../" class="site-brand" data-i18n="navBrand">Anastasiia Haiduchenko</a>
+        <a href="../../" class="site-brand" data-i18n="navBrand">Anastasiia Haiduchenko</a>
         <button type="button" class="site-nav-toggle" id="site-nav-toggle" aria-expanded="false" aria-controls="site-nav-panel">
           <span class="visually-hidden" data-i18n="navMenuToggle">Відкрити меню</span>
           <span class="site-nav-toggle__bar" aria-hidden="true"></span>
@@ -36,10 +36,10 @@
     <div class="site-nav-panel" id="site-nav-panel">
       <nav class="site-nav" data-i18n-aria="navMenuLabel">
         <ul class="site-nav__list">
-          <li><a href="../services/" class="site-nav__link" data-i18n="navServices">Послуги</a></li>
-          <li><a href="../work/" class="site-nav__link" data-i18n="navWork">Результати роботи</a></li>
-          <li><a href="../about/" class="site-nav__link" data-i18n="navAbout">Про мене</a></li>
-          <li><a href="../blog/" class="site-nav__link" data-i18n="navBlog">Блог</a></li>
+          <li><a href="../../services/" class="site-nav__link" data-i18n="navServices">Послуги</a></li>
+          <li><a href="../../work/" class="site-nav__link" data-i18n="navWork">Результати роботи</a></li>
+          <li><a href="../../about/" class="site-nav__link" data-i18n="navAbout">Про мене</a></li>
+          <li><a href="../../blog/" class="site-nav__link" data-i18n="navBlog">Блог</a></li>
         </ul>
         <div class="site-header__actions">
           <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language">
@@ -52,33 +52,40 @@
     </div>
 
     <div class="page-transition-shell" id="page-content">
-      <section class="page-hero">
-        <div class="container">
-          <p class="eyebrow" data-i18n="pageBlogEyebrow">Блог</p>
-          <h1 class="page-hero__title" data-i18n="pageBlogTitle">Блог</h1>
-          <p class="page-hero__lead" data-i18n="pageBlogLead">Практичні матеріали про Reddit як канал трафіку, довіри й продажів.</p>
-        </div>
-      </section>
+      <article class="container" style="padding:60px 26px 90px">
+        <header class="article-hero">
+          <p class="eyebrow" data-i18n="blogArticle1Tag">Reddit-маркетинг</p>
+          <p class="article-hero__meta" data-i18n="blogArticle1Meta">6 хв читання · Лютий 2026</p>
+          <h1 data-i18n="blogArticle1Title">Reddit став новим Google для досліджень перед покупкою</h1>
+        </header>
 
-      <main class="page-main">
-        <div class="container blog-list">
-          <a href="reddit-novyj-google/" class="blog-card">
-            <div class="blog-card__img">
-              <picture>
-                <source srcset="../assets/images/blog-reddit-google.webp" type="image/webp" />
-                <img src="../assets/images/blog-reddit-google.jpg" alt="" width="1200" height="800" loading="lazy" decoding="async" data-i18n-alt="blogArticle1CoverAlt" />
-              </picture>
-            </div>
-            <div class="blog-card__body">
-              <p class="eyebrow" data-i18n="blogArticle1Tag">Reddit-маркетинг</p>
-              <p class="blog-card__meta" data-i18n="blogArticle1Meta">6 хв читання · Лютий 2026</p>
-              <h3 data-i18n="blogArticle1Title">Reddit став новим Google для досліджень перед покупкою</h3>
-              <p data-i18n="blogArticle1Excerpt">Люди гуглять «brand review reddit» та «is brand legit reddit». У більшості випадків Reddit уже на першій сторінці видачі.</p>
-              <span class="btn btn-ghost btn-sm" data-i18n="blogReadMore">Читати статтю</span>
-            </div>
-          </a>
+        <div class="article-cover" aria-hidden="true">
+          <picture>
+            <source srcset="../../assets/images/blog-reddit-google.webp" type="image/webp" />
+            <img src="../../assets/images/blog-reddit-google.jpg" alt="" width="1200" height="800" fetchpriority="high" decoding="async" data-i18n-alt="blogArticle1CoverAlt" />
+          </picture>
         </div>
-      </main>
+
+        <div class="article-content">
+          <p data-i18n="articleP1">Якщо ви просуваєте продукт на англомовний ринок і досі думаєте, чи варто серйозно займатися Reddit — перевірте це прямо сьогодні. Відкрийте анонімну вкладку, увімкніть VPN і введіть у пошук назву свого бренду.</p>
+          <p data-i18n="articleP2">У більшості випадків Reddit уже буде на першій сторінці видачі. І саме тому він впливає на рішення ще до того, як людина зайде на ваш сайт.</p>
+
+          <h2 data-i18n="articleH2_1">Як люди шукають бренди</h2>
+          <p data-i18n="articleP3">Спробуйте запити, якими реально користуються англомовні юзери:</p>
+          <ul data-i18n-list="articleSearchQueries"></ul>
+          <p data-i18n="articleP4">Так, люди справді так гуглять. Перед покупкою вони шукають не рекламу, а чужий досвід, порівняння, сумніви та відповіді на них.</p>
+
+          <h2 data-i18n="articleH2_2">Два сценарії</h2>
+          <p data-i18n="articleP5">Перший — про вас уже говорять. Питання в тому, що саме бачить людина: конструктивний досвід чи тільки негатив, який роками висить у пошуку.</p>
+          <p data-i18n="articleP6">Другий — про вас майже не говорять. Це теж сигнал: ви не присутні в важливій точці прийняття рішення.</p>
+
+          <h2 data-i18n="articleH2_3">Що означає нормальна робота з Reddit</h2>
+          <ul data-i18n-list="articleWorkList"></ul>
+          <p data-i18n="articleP7">Reddit сьогодні — не просто ще один канал. Це місце, куди люди заходять до того, як купують. І якщо бізнес цим не керує, вплив відбувається без його участі.</p>
+
+          <a href="../../blog/" class="btn btn-ghost" style="margin-top:24px" data-i18n="blogBack">← Назад до блогу</a>
+        </div>
+      </article>
     </div>
 
     <footer class="site-footer" id="contact">
@@ -116,8 +123,8 @@
       </div>
     </div>
 
-    <script src="../js/translations.js"></script>
-    <script src="../js/site.js"></script>
-    <script src="../js/i18n.js"></script>
+    <script src="../../js/translations.js"></script>
+    <script src="../../js/site.js"></script>
+    <script src="../../js/i18n.js"></script>
   </body>
 </html>
