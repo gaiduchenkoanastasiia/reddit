@@ -54,9 +54,51 @@
     <div class="page-transition-shell" id="page-content">
       <section class="page-hero">
         <div class="container">
-          <p class="eyebrow" data-i18n="pageServicesEyebrow">Послуги</p>
           <h1 class="page-hero__title" data-i18n="pageServicesTitle">Послуги</h1>
-          <p class="page-hero__lead" data-i18n="pageServicesLead">Оберіть напрям співпраці та перегляньте деталі.</p>
+          <p class="page-hero__lead" data-i18n="pageServicesLead">Кожен бізнес має різні цілі. Комусь достатньо кількох стратегічних публікацій, а комусь потрібен повний Reddit-напрям. Нижче — формати співпраці, які закривають обидва сценарії.</p>
+        </div>
+      </section>
+
+      <section class="quick-nav" aria-label="Швидкий вибір послуги">
+        <div class="container">
+          <ul class="quick-nav__grid" role="list">
+            <li>
+              <a href="#service-strategy" class="quick-nav__card">
+                <span class="quick-nav__icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M21.21 15.89A10 10 0 1 1 8 2.83"/><path d="M22 12A10 10 0 0 0 12 2v10z"/></svg>
+                </span>
+                <p class="quick-nav__q" data-i18n="quickNavQ1">Хочете оцінити потенціал Reddit?</p>
+                <span class="quick-nav__a" data-i18n="quickNavA1">→ Reddit-стратегія</span>
+              </a>
+            </li>
+            <li>
+              <a href="#service-content" class="quick-nav__card">
+                <span class="quick-nav__icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 20h9"/><path d="M16.5 3.5a2.12 2.12 0 0 1 3 3L7 19l-4 1 1-4Z"/></svg>
+                </span>
+                <p class="quick-nav__q" data-i18n="quickNavQ2">Потрібен тільки контент?</p>
+                <span class="quick-nav__a" data-i18n="quickNavA2">→ Контент і публікації</span>
+              </a>
+            </li>
+            <li>
+              <a href="#service-removal" class="quick-nav__card">
+                <span class="quick-nav__icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+                </span>
+                <p class="quick-nav__q" data-i18n="quickNavQ3">Потрібно покращити репутацію бренду</p>
+                <span class="quick-nav__a" data-i18n="quickNavA3">→ Управління репутацією</span>
+              </a>
+            </li>
+            <li>
+              <a href="#service-turnkey" class="quick-nav__card">
+                <span class="quick-nav__icon" aria-hidden="true">
+                  <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.7-2.13-.09-2.91a2.18 2.18 0 0 0-2.91-.09z"/><path d="m12 15-3-3a22 22 0 0 1 2-3.95A12.88 12.88 0 0 1 22 2c0 2.72-.78 7.5-6 11a22.35 22.35 0 0 1-4 2z"/><path d="M9 12H4s.55-3.03 2-4c1.62-1.08 5 0 5 0"/><path d="M12 15v5s3.03-.55 4-2c1.08-1.62 0-5 0-5"/></svg>
+                </span>
+                <p class="quick-nav__q" data-i18n="quickNavQ4">Хочете передати Reddit повністю?</p>
+                <span class="quick-nav__a" data-i18n="quickNavA4">→ Reddit під ключ</span>
+              </a>
+            </li>
+          </ul>
         </div>
       </section>
 
@@ -64,86 +106,243 @@
         <div class="container cards cards--stack">
           <article class="svc svc-accordion" id="service-strategy">
             <div class="svc-top"><h3 data-i18n="serviceStrategyTitle">Reddit-стратегія</h3><span class="price" data-i18n="serviceStrategyPrice">$300</span></div>
-            <p class="desc" data-i18n="serviceStrategyDesc">Для бізнесів, які хочуть зрозуміти потенціал Reddit перед запуском.</p>
+            <p class="desc" data-i18n="serviceStrategyDesc">Для компаній, які хочуть зрозуміти, чи варто інвестувати в Reddit.</p>
             <ul class="svc-feats" data-i18n-list="serviceStrategyFeatures"></ul>
             <button type="button" class="svc-accordion__toggle" aria-expanded="false" data-i18n="servicesCtaDetails">Детальніше</button>
             <div class="svc-accordion__body">
-              <h4 data-i18n="serviceModalWhoTitle">Кому підходить</h4>
-              <ul data-i18n-list="m1WhoList"></ul>
-              <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
-              <p data-i18n="m1OutcomeText"></p>
+              <div class="svc-body__grid">
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalWhoTitle">Для кого</h4>
+                  <p data-i18n="strategyWhoText"></p>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="servicesIncludesLabel">Що входить</h4>
+                  <ul data-i18n-list="strategyWhatList"></ul>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
+                  <ul data-i18n-list="strategyOutcomeList"></ul>
+                </div>
+              </div>
+              <p class="svc-body__term"><strong data-i18n="servicesTermLabel">Термін:</strong> <span data-i18n="strategyTermText"></span></p>
             </div>
           </article>
 
           <article class="svc svc-accordion" id="service-content">
-            <div class="svc-top"><h3 data-i18n="serviceContentTitle">Контент і публікації</h3><span class="price" data-i18n="serviceContentPrice">$150</span></div>
-            <p class="desc" data-i18n="serviceContentDesc">Створення контенту під конкретні цілі бізнесу.</p>
+            <div class="svc-top"><h3 data-i18n="serviceContentTitle">Контент і публікації</h3><span class="price" data-i18n="serviceContentPrice">від $150</span></div>
+            <p class="desc" data-i18n="serviceContentDesc">Нативний Reddit-контент для просування продукту та органічної видимості.</p>
             <ul class="svc-feats" data-i18n-list="serviceContentFeatures"></ul>
             <button type="button" class="svc-accordion__toggle" aria-expanded="false" data-i18n="servicesCtaDetails">Детальніше</button>
             <div class="svc-accordion__body">
-              <h4 data-i18n="servicesPackagesTitle">Пакети</h4>
-              <ul>
-                <li><strong data-i18n="pkgContentStarterName">STARTER</strong> — <span data-i18n="pkgContentStarterPrice">$150</span>: <span data-i18n="pkgContentStarterDesc"></span></li>
-                <li><strong data-i18n="pkgContentGrowthName">GROWTH</strong> — <span data-i18n="pkgContentGrowthPrice">$250</span>: <span data-i18n="pkgContentGrowthDesc"></span></li>
-                <li><strong data-i18n="pkgContentBoostName">BOOST</strong> — <span data-i18n="pkgContentBoostPrice">$400</span>: <span data-i18n="pkgContentBoostDesc"></span></li>
-              </ul>
+              <div class="svc-body__grid">
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalWhoTitle">Для кого</h4>
+                  <p data-i18n="contentWhoText"></p>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="servicesIncludesLabel">Що входить</h4>
+                  <ul data-i18n-list="contentWhatList"></ul>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
+                  <ul data-i18n-list="contentOutcomeList"></ul>
+                </div>
+              </div>
+              <p class="svc-body__term"><strong data-i18n="servicesTermLabel">Термін:</strong> <span data-i18n="contentTermText"></span></p>
+              <div class="svc-packages">
+                <h4 class="svc-packages__title" data-i18n="servicesPackagesTitle">Пакети</h4>
+                <div class="svc-packages__grid">
+                  <div class="svc-packages__card">
+                    <span class="svc-packages__name" data-i18n="pkgContentStarterName">STARTER</span>
+                    <span class="svc-packages__price" data-i18n="pkgContentStarterPrice">$150</span>
+                    <p class="svc-packages__desc" data-i18n="pkgContentStarterDesc"></p>
+                  </div>
+                  <div class="svc-packages__card">
+                    <span class="svc-packages__name" data-i18n="pkgContentGrowthName">GROWTH</span>
+                    <span class="svc-packages__price" data-i18n="pkgContentGrowthPrice">$250</span>
+                    <p class="svc-packages__desc" data-i18n="pkgContentGrowthDesc"></p>
+                  </div>
+                  <div class="svc-packages__card">
+                    <span class="svc-packages__name" data-i18n="pkgContentBoostName">BOOST</span>
+                    <span class="svc-packages__price" data-i18n="pkgContentBoostPrice">$300</span>
+                    <p class="svc-packages__desc" data-i18n="pkgContentBoostDesc"></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </article>
 
           <article class="svc svc-accordion" id="service-discussions">
-            <div class="svc-top"><h3 data-i18n="serviceDiscussionsTitle">Робота з обговореннями</h3><span class="price" data-i18n="serviceDiscussionsPrice">$100</span></div>
+            <div class="svc-top"><h3 data-i18n="serviceDiscussionsTitle">Робота з обговореннями</h3><span class="price" data-i18n="serviceDiscussionsPrice">від $150</span></div>
             <p class="desc" data-i18n="serviceDiscussionsDesc"></p>
             <ul class="svc-feats" data-i18n-list="serviceDiscussionsFeatures"></ul>
             <button type="button" class="svc-accordion__toggle" aria-expanded="false" data-i18n="servicesCtaDetails">Детальніше</button>
             <div class="svc-accordion__body">
-              <h4 data-i18n="serviceModalWhoTitle">Кому підходить</h4>
-              <ul data-i18n-list="m3WhoList"></ul>
-              <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
-              <ul data-i18n-list="m3OutcomeList"></ul>
+              <div class="svc-body__grid">
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalWhoTitle">Для кого</h4>
+                  <p data-i18n="discussionsWhoText"></p>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="servicesIncludesLabel">Що входить</h4>
+                  <ul data-i18n-list="discussionsWhatList"></ul>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
+                  <ul data-i18n-list="discussionsOutcomeList"></ul>
+                </div>
+              </div>
+              <p class="svc-body__term"><strong data-i18n="servicesTermLabel">Термін:</strong> <span data-i18n="discussionsTermText"></span></p>
+              <p class="svc-body__term"><strong data-i18n="discussionsPricingLabel">Вартість:</strong> <span data-i18n="discussionsPricingText">$150 за 10 коментарів.</span></p>
             </div>
           </article>
 
           <article class="svc svc-accordion" id="service-subreddit">
-            <div class="svc-top"><h3 data-i18n="serviceSubredditTitle">Управління сабредітом</h3><span class="price" data-i18n="serviceSubredditPrice">$900/міс</span></div>
+            <div class="svc-top"><h3 data-i18n="serviceSubredditTitle">Ведення сабредіту</h3><span class="price" data-i18n="serviceSubredditPrice">$900/міс</span></div>
             <p class="desc" data-i18n="serviceSubredditDesc"></p>
             <ul class="svc-feats" data-i18n-list="serviceSubredditFeatures"></ul>
             <button type="button" class="svc-accordion__toggle" aria-expanded="false" data-i18n="servicesCtaDetails">Детальніше</button>
             <div class="svc-accordion__body">
-              <h4 data-i18n="serviceModalWhoTitle">Кому підходить</h4>
-              <ul data-i18n-list="m4WhoList"></ul>
-              <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
-              <ul data-i18n-list="m4OutcomeList"></ul>
+              <div class="svc-body__grid">
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalWhoTitle">Для кого</h4>
+                  <p data-i18n="subredditWhoText"></p>
+                </div>
+                <div class="svc-body__col svc-body__col--wide">
+                  <h4 data-i18n="servicesIncludesLabel">Що входить</h4>
+                  <div class="svc-subblocks">
+                    <div class="svc-subblock">
+                      <h5 data-i18n="subredditContentTitle">Контент</h5>
+                      <ul data-i18n-list="subredditContentList"></ul>
+                    </div>
+                    <div class="svc-subblock">
+                      <h5 data-i18n="subredditManagementTitle">Управління спільнотою</h5>
+                      <ul data-i18n-list="subredditManagementList"></ul>
+                    </div>
+                    <div class="svc-subblock">
+                      <h5 data-i18n="subredditGrowthTitle">Розвиток</h5>
+                      <ul data-i18n-list="subredditGrowthList"></ul>
+                    </div>
+                  </div>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
+                  <ul data-i18n-list="subredditOutcomeList"></ul>
+                </div>
+              </div>
+              <p class="svc-body__term"><strong data-i18n="servicesTermLabel">Термін:</strong> <span data-i18n="subredditTermText"></span></p>
             </div>
           </article>
 
-          <article class="svc svc-accordion" id="service-reputation">
-            <div class="svc-top"><h3 data-i18n="serviceReputationTitle">Управління репутацією</h3><span class="price" data-i18n="serviceReputationPrice">$300</span></div>
-            <p class="desc" data-i18n="serviceReputationDesc"></p>
-            <ul class="svc-feats" data-i18n-list="serviceReputationFeatures"></ul>
+          <article class="svc svc-accordion" id="service-removal">
+            <div class="svc-top"><h3 data-i18n="serviceRemovalTitle">Видалення Reddit-публікацій</h3><span class="price" data-i18n="serviceRemovalPrice">$300</span></div>
+            <p class="desc" data-i18n="serviceRemovalDesc"></p>
+            <ul class="svc-feats" data-i18n-list="serviceRemovalFeatures"></ul>
             <button type="button" class="svc-accordion__toggle" aria-expanded="false" data-i18n="servicesCtaDetails">Детальніше</button>
             <div class="svc-accordion__body">
-              <h4 data-i18n="serviceModalWhoTitle">Кому підходить</h4>
-              <ul data-i18n-list="smReputationWhoList"></ul>
-              <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
-              <ul data-i18n-list="smReputationOutcomeList"></ul>
+              <div class="svc-body__grid">
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalWhoTitle">Для кого</h4>
+                  <p data-i18n="removalWhoText"></p>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="servicesIncludesLabel">Що входить</h4>
+                  <ul data-i18n-list="removalWhatList"></ul>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
+                  <ul data-i18n-list="removalOutcomeList"></ul>
+                </div>
+              </div>
+              <p class="svc-body__term"><strong data-i18n="servicesTermLabel">Термін:</strong> <span data-i18n="removalTermText"></span></p>
             </div>
           </article>
 
           <article class="svc svc-accordion svc--hot" id="service-turnkey">
-            <div class="svc-top"><h3 data-i18n="serviceTurnkeyTitle">Reddit під ключ</h3><span class="price" data-i18n="serviceTurnkeyPrice">$1200/міс</span></div>
+            <div class="svc-top"><h3 data-i18n="serviceTurnkeyTitle">Reddit під ключ</h3><span class="price" data-i18n="serviceTurnkeyPrice">від $1200/міс</span></div>
             <p class="desc" data-i18n="serviceTurnkeyDesc"></p>
             <ul class="svc-feats" data-i18n-list="serviceTurnkeyFeatures"></ul>
             <button type="button" class="svc-accordion__toggle" aria-expanded="false" data-i18n="servicesCtaDetails">Детальніше</button>
             <div class="svc-accordion__body">
-              <h4 data-i18n="servicesPackagesTitle">Пакети</h4>
-              <ul>
-                <li><strong data-i18n="pkgTurnkeyGrowthName">REDDIT GROWTH</strong> — <span data-i18n="pkgTurnkeyGrowthPrice"></span>: <span data-i18n="pkgTurnkeyGrowthDesc"></span></li>
-                <li><strong data-i18n="pkgTurnkeyGrowthSubName">REDDIT GROWTH + SUBREDDIT</strong> — <span data-i18n="pkgTurnkeyGrowthSubPrice"></span>: <span data-i18n="pkgTurnkeyGrowthSubDesc"></span></li>
-              </ul>
+              <div class="svc-months">
+                <h4 data-i18n="turnkeyWorkTitle">Як будується робота</h4>
+                <div class="svc-months__grid">
+                  <div class="svc-months__card">
+                    <h5 data-i18n="turnkeyMonth1Title">Місяць 1 — Аналіз і запуск</h5>
+                    <ul data-i18n-list="turnkeyMonth1List"></ul>
+                  </div>
+                  <div class="svc-months__card">
+                    <h5 data-i18n="turnkeyMonth2Title">Місяць 2+</h5>
+                    <p class="svc-months__intro" data-i18n="turnkeyMonth2Intro"></p>
+                    <ul data-i18n-list="turnkeyMonth2List"></ul>
+                    <p class="svc-months__note" data-i18n="turnkeyMonth2Note"></p>
+                  </div>
+                </div>
+              </div>
+              <div class="svc-body__grid">
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalWhoTitle">Для кого</h4>
+                  <p data-i18n="turnkeyWhoText"></p>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="servicesIncludesLabel">Що входить</h4>
+                  <ul data-i18n-list="turnkeyWhatList"></ul>
+                </div>
+                <div class="svc-body__col">
+                  <h4 data-i18n="serviceModalOutcomeTitle">Що ви отримаєте</h4>
+                  <ul data-i18n-list="turnkeyOutcomeList"></ul>
+                </div>
+              </div>
+              <div class="svc-packages">
+                <h4 class="svc-packages__title" data-i18n="turnkeyFormatsTitle">Формати співпраці</h4>
+                <div class="svc-packages__grid svc-packages__grid--2">
+                  <div class="svc-packages__card svc-packages__card--featured">
+                    <span class="svc-packages__name" data-i18n="pkgTurnkeyGrowthName">REDDIT GROWTH</span>
+                    <span class="svc-packages__price" data-i18n="pkgTurnkeyGrowthPrice">$1200/місяць</span>
+                    <p class="svc-packages__desc" data-i18n="pkgTurnkeyGrowthDesc"></p>
+                  </div>
+                  <div class="svc-packages__card svc-packages__card--featured">
+                    <span class="svc-packages__name" data-i18n="pkgTurnkeyGrowthSubName">REDDIT GROWTH + SUBREDDIT</span>
+                    <span class="svc-packages__price" data-i18n="pkgTurnkeyGrowthSubPrice">$1500/місяць</span>
+                    <p class="svc-packages__desc" data-i18n="pkgTurnkeyGrowthSubDesc"></p>
+                  </div>
+                </div>
+              </div>
             </div>
           </article>
         </div>
       </main>
+
+      <section class="principles">
+        <div class="container principles__grid">
+          <article class="principles__card">
+            <header class="principles__header">
+              <span class="principles__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              </span>
+              <h2 data-i18n="principlesTitle">Принципи співпраці</h2>
+            </header>
+            <ul class="principles__list principles__list--yes">
+              <li><strong data-i18n="principle1Title"></strong><span data-i18n="principle1Text"></span></li>
+              <li><strong data-i18n="principle2Title"></strong><span data-i18n="principle2Text"></span></li>
+              <li><strong data-i18n="principle3Title"></strong><span data-i18n="principle3Text"></span></li>
+              <li><strong data-i18n="principle4Title"></strong><span data-i18n="principle4Text"></span></li>
+              <li><strong data-i18n="principle5Title"></strong><span data-i18n="principle5Text"></span></li>
+              <li><strong data-i18n="principle6Title"></strong><span data-i18n="principle6Text"></span></li>
+            </ul>
+          </article>
+          <article class="principles__card principles__card--no">
+            <header class="principles__header">
+              <span class="principles__icon" aria-hidden="true">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="m15 9-6 6"/><path d="m9 9 6 6"/></svg>
+              </span>
+              <h2 data-i18n="noWorkTitle">З чим я не працюю</h2>
+            </header>
+            <ul class="principles__list principles__list--no" data-i18n-list="noWorkList"></ul>
+            <p class="principles__note" data-i18n="noWorkNote">Я відмовляюсь від проєктів, які можуть нашкодити репутації моєї роботи або порушують правила Reddit.</p>
+          </article>
+        </div>
+      </section>
     </div>
 
     <footer class="site-footer" id="contact">
