@@ -468,7 +468,7 @@ html.nav-enter .site-footer {
   font-family: "Sora", sans-serif;
   font-size: 2.4rem;
   font-weight: 700;
-  color: #241811;
+  color: var(--dim);
 }
 
 .phase h3 {
@@ -490,7 +490,7 @@ html.nav-enter .site-footer {
 }
 
 .phase li {
-  color: var(--dim);
+  color: var(--muted);
   font-size: 0.84rem;
   padding-left: 16px;
   position: relative;
@@ -575,7 +575,7 @@ html.nav-enter .site-footer {
 }
 
 .svc-feats li {
-  color: var(--dim);
+  color: var(--muted);
   font-size: 0.82rem;
   padding-left: 16px;
   position: relative;
