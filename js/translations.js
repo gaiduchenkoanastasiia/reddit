@@ -54,7 +54,7 @@ window.REDDIT_TRANSLATIONS = {
     servicesTabReputation: 'Управління репутацією',
     servicesTabTurnkey: 'Reddit під ключ',
     serviceStrategyTitle: 'Reddit-стратегія',
-    serviceStrategyPrice: '$300',
+    serviceStrategyPrice: '$400',
     serviceStrategyDesc: 'Для компаній, які хочуть зрозуміти, чи варто інвестувати в Reddit і як зробити це без хаотичних експериментів.',
     serviceStrategyFeatures: [
       'Аналіз ніші та попиту',
@@ -835,7 +835,7 @@ window.REDDIT_TRANSLATIONS = {
     servicesTabReputation: 'Reputation management',
     servicesTabTurnkey: 'Reddit end-to-end',
     serviceStrategyTitle: 'Reddit strategy',
-    serviceStrategyPrice: '$300',
+    serviceStrategyPrice: '$400',
     serviceStrategyDesc:
       'For companies that want to understand whether Reddit is worth investing in and how to do it without chaotic experiments.',
     serviceStrategyFeatures: [
