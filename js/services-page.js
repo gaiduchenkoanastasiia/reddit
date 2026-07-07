@@ -2,6 +2,13 @@
  * Service card accordions on the services page.
  */
 (function () {
+  function openCard(card) {
+    if (!card) return;
+    var toggle = card.querySelector('.svc-accordion__toggle');
+    card.classList.add('is-open');
+    if (toggle) toggle.setAttribute('aria-expanded', 'true');
+  }
+
   function initAccordions() {
     var cards = document.querySelectorAll('.svc-accordion');
     if (!cards.length) return;
@@ -17,9 +24,28 @@
     });
   }
 
-  if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', initAccordions);
-  } else {
+  function openFromHash() {
+    var hash = window.location.hash;
+    if (!hash || hash.indexOf('#service-') !== 0) return;
+
+    var card = document.querySelector(hash);
+    if (!card || !card.classList.contains('svc-accordion')) return;
+
+    openCard(card);
+    window.requestAnimationFrame(function () {
+      card.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    });
+  }
+
+  function init() {
     initAccordions();
+    openFromHash();
+    window.addEventListener('hashchange', openFromHash);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
   }
 })();

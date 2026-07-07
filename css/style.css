@@ -587,6 +587,11 @@ html.nav-enter .site-footer {
   border-color: var(--accent);
 }
 
+.svc__cta {
+  margin-top: 18px;
+  width: fit-content;
+}
+
 /* Service accordion (services page) */
 .svc-accordion {
   min-height: auto;
@@ -768,6 +773,136 @@ html.nav-enter .site-footer {
 .band__label {
   color: var(--muted);
   font-weight: 500;
+}
+
+/* Case study cards */
+.case-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.case-card {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.case-card:hover {
+  transform: translateY(-5px);
+  border-color: var(--accent);
+}
+
+.case-card__head {
+  padding: 20px 22px;
+  border-bottom: 1px solid var(--line);
+}
+
+.case-card__head-inner {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.case-card__icon {
+  flex-shrink: 0;
+  display: grid;
+  place-items: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  border: 1px solid rgba(232, 114, 44, 0.35);
+  background: rgba(232, 114, 44, 0.12);
+  color: var(--accent-2);
+}
+
+.case-card__titles {
+  flex: 1;
+  min-width: 0;
+}
+
+.case-card__cat {
+  font-family: "Sora", sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--text);
+}
+
+.case-card__niche {
+  margin: 4px 0 0;
+  color: var(--muted);
+  font-size: 0.86rem;
+  font-weight: 500;
+  line-height: 1.35;
+}
+
+.case-card__badge {
+  flex-shrink: 0;
+  align-self: flex-start;
+  margin-top: 2px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(232, 114, 44, 0.14);
+  border: 1px solid rgba(232, 114, 44, 0.28);
+  color: var(--accent-2);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.case-card__body {
+  padding: 22px;
+}
+
+.case-card__section-title {
+  font-size: 0.78rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent-2);
+  margin: 0 0 12px;
+  font-family: "Sora", sans-serif;
+}
+
+.case-card__section-title:not(:first-child) {
+  margin-top: 20px;
+}
+
+.case-card__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.case-card__list li {
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 8px;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.45;
+}
+
+.case-card__list li::before {
+  content: "✓";
+  position: absolute;
+  left: 0;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.case-card__result {
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.svc-accordion[id] {
+  scroll-margin-top: 100px;
 }
 
 /* About */
@@ -1338,7 +1473,8 @@ body.contact-modal-open {
 
   .process-grid,
   .cards,
-  .res-grid {
+  .res-grid,
+  .case-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 
@@ -1355,6 +1491,7 @@ body.contact-modal-open {
   .process-grid,
   .cards,
   .res-grid,
+  .case-grid,
   .band {
     grid-template-columns: 1fr;
   }
