@@ -3,64 +3,202 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Результати роботи | Anastasiia Haiduchenko — Reddit Marketing Expert</title>
-    <meta
-      name="description"
-      id="meta-description"
-      content="Кейси, приклади матеріалів і результати Reddit-кампаній для клієнтів."
-    />
+    <meta name="theme-color" content="#0a0705" />
+    <meta name="color-scheme" content="dark" />
+    <style>html{background-color:#0a0705;color-scheme:dark}body{background-color:#0a0705;color:#f7efe8}</style>
+    <script>try{if(sessionStorage.getItem('reddit-nav'))document.documentElement.classList.add('nav-enter');}catch(e){}</script>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Результати роботи | Anastasiia Haiduchenko</title>
+    <meta name="description" id="meta-description" content="Кейси та результати Reddit-кампаній: трафік, апвоути, видимість у Google." />
     <meta name="author" content="Anastasiia Haiduchenko" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://gaiduchenkoanastasiia.github.io/reddit/work/" />
-    <link rel="icon" type="image/svg+xml" href="../favicon.svg" />
-    <link rel="stylesheet" href="../css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
   </head>
   <body class="page-inner page-work">
-    <div id="site-header-mount"></div>
-
-    <div class="page-transition-shell" id="page-content">
-
-    <section class="page-hero">
-      <div class="container page-hero__inner">
-        <p class="page-hero__eyebrow" data-i18n="pageWorkEyebrow">Результати</p>
-        <h1 class="page-hero__title" data-i18n="pageWorkTitle">Результати роботи</h1>
-        <p class="page-hero__lead" data-i18n="pageWorkLead">
-          Приклади матеріалів, кейсів і результатів, які отримують клієнти під
-          час роботи зі мною.
-        </p>
+    <script src="../js/lang-boot.js"></script>
+    <script src="../js/lang-chrome.js"></script>
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a href="../" class="site-brand" data-i18n="navBrand">Anastasiia Haiduchenko</a>
+        <button type="button" class="site-nav-toggle" id="site-nav-toggle" aria-expanded="false" aria-controls="site-nav-panel">
+          <span class="visually-hidden" data-i18n="navMenuToggle">Відкрити меню</span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+        </button>
       </div>
-    </section>
+    </header>
 
-    <main class="page-main">
-      <section class="page-notice" aria-labelledby="page-notice-title">
-        <div class="container">
-          <div class="page-notice__card">
-            <h2 id="page-notice-title" class="page-notice__title" data-i18n="pageComingSoonTitle">
-              Розділ активно наповнюється
-            </h2>
-            <p class="page-notice__text" data-i18n="pageComingSoonText">
-              Зараз я працюю над розширенням цього розділу. Найближчим часом тут
-              з'являться нові матеріали, приклади робіт, дослідження та корисний
-              контент про Reddit для бізнесу.
-            </p>
-            <p class="page-notice__subtext" data-i18n="pageComingSoonSubtext">
-              Поки що ви можете ознайомитися з інформацією на головній сторінці
-              або зв'язатися зі мною для консультації.
-            </p>
+    <div class="site-nav-panel" id="site-nav-panel">
+      <nav class="site-nav" data-i18n-aria="navMenuLabel">
+        <ul class="site-nav__list">
+          <li><a href="../services/" class="site-nav__link" data-i18n="navServices">Послуги</a></li>
+          <li><a href="../work/" class="site-nav__link" data-i18n="navWork">Результати роботи</a></li>
+          <li><a href="../about/" class="site-nav__link" data-i18n="navAbout">Про мене</a></li>
+          <li><a href="../blog/" class="site-nav__link" data-i18n="navBlog">Блог</a></li>
+        </ul>
+        <div class="site-header__actions">
+          <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language">
+            <button type="button" id="lang-switch-ua" aria-pressed="true">UA</button>
+            <button type="button" id="lang-switch-en" aria-pressed="false">EN</button>
           </div>
+          <button type="button" class="btn btn-primary site-header__cta" data-contact-modal data-i18n="heroCtaPrimary">Запланувати консультацію</button>
         </div>
-      </section>
-    </main>
-
+      </nav>
     </div>
 
-    <div id="site-footer-mount"></div>
+    <div class="page-transition-shell" id="page-content">
+      <section class="page-hero">
+        <div class="container">
+          <p class="eyebrow" data-i18n="pageWorkEyebrow">Результати</p>
+          <h1 class="page-hero__title" data-i18n="pageWorkTitle">Результати роботи</h1>
+          <p class="page-hero__lead" data-i18n="pageWorkLead">Приклади матеріалів, кейсів і результатів, які отримують клієнти під час роботи зі мною.</p>
+        </div>
+      </section>
+
+      <main class="page-main">
+        <div class="container">
+          <div class="band">
+            <div><div class="band__num">25+</div><div class="band__label" data-i18n="band1">брендів працювали зі мною</div></div>
+            <div><div class="band__num">100%</div><div class="band__label" data-i18n="band2">органіка, без реклами</div></div>
+            <div><div class="band__num">6+</div><div class="band__label" data-i18n="band3">років у маркетингу</div></div>
+          </div>
+          <div class="case-grid">
+            <article class="case-card">
+              <header class="case-card__head">
+                <div class="case-card__head-inner">
+                  <span class="case-card__icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M22 10 12 5 2 10l10 5 10-5Z" />
+                      <path d="M6 12v5c0 1.5 2.7 3 6 3s6-1.5 6-3v-5" />
+                      <path d="M22 10v6" />
+                    </svg>
+                  </span>
+                  <div class="case-card__titles">
+                    <h3 class="case-card__cat" data-i18n="case1Cat">EdTech</h3>
+                    <p class="case-card__niche" data-i18n="case1Niche">Онлайн-освіта</p>
+                  </div>
+                  <span class="case-card__badge" data-i18n="case1Badge">B2C</span>
+                </div>
+              </header>
+              <div class="case-card__body">
+                <h4 class="case-card__section-title" data-i18n="caseDoneTitle">Що зробили</h4>
+                <ul class="case-card__list" data-i18n-list="case1Done">
+                  <li>Reddit-стратегія та аналіз ніші</li>
+                  <li>Запуск і розвиток брендового сабредіту</li>
+                  <li>Контент-план та регулярні публікації</li>
+                  <li>SEO через Reddit для Google</li>
+                  <li>Робота з репутацією та відгуками</li>
+                </ul>
+                <h4 class="case-card__section-title" data-i18n="caseResultTitle">Результат</h4>
+                <p class="case-card__result" data-i18n="case1Result">Reddit став одним із каналів органічної видимості бренду, а обговорення почали регулярно з'являтися у видачі Google.</p>
+              </div>
+            </article>
+            <article class="case-card">
+              <header class="case-card__head">
+                <div class="case-card__head-inner">
+                  <span class="case-card__icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="m16 18 6-6-6-6" />
+                      <path d="m8 6-6 6 6 6" />
+                    </svg>
+                  </span>
+                  <div class="case-card__titles">
+                    <h3 class="case-card__cat" data-i18n="case2Cat">Developer Tools</h3>
+                    <p class="case-card__niche" data-i18n="case2Niche">B2B SaaS</p>
+                  </div>
+                  <span class="case-card__badge" data-i18n="case2Badge">B2B</span>
+                </div>
+              </header>
+              <div class="case-card__body">
+                <h4 class="case-card__section-title" data-i18n="caseDoneTitle">Що зробили</h4>
+                <ul class="case-card__list" data-i18n-list="case2Done">
+                  <li>Дослідження аудиторії та професійних спільнот</li>
+                  <li>Робота з тематичними обговореннями</li>
+                  <li>Запуск і розвиток брендового та нішевих сабредітів</li>
+                  <li>Побудова брендової присутності</li>
+                  <li>Регулярна аналітика та оптимізація</li>
+                </ul>
+                <h4 class="case-card__section-title" data-i18n="caseResultTitle">Результат</h4>
+                <p class="case-card__result" data-i18n="case2Result">Сформували системну присутність бренду в професійних Reddit-спільнотах і посилили органічну видимість продукту.</p>
+              </div>
+            </article>
+            <article class="case-card">
+              <header class="case-card__head">
+                <div class="case-card__head-inner">
+                  <span class="case-card__icon" aria-hidden="true">
+                    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+                      <path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z" />
+                      <path d="M20 3v4" />
+                      <path d="M22 5h-4" />
+                      <path d="M4 17v2" />
+                      <path d="M5 18H3" />
+                    </svg>
+                  </span>
+                  <div class="case-card__titles">
+                    <h3 class="case-card__cat" data-i18n="case3Cat">AI SaaS</h3>
+                    <p class="case-card__niche" data-i18n="case3Niche">AI-продукти</p>
+                  </div>
+                  <span class="case-card__badge" data-i18n="case3Badge">B2B</span>
+                </div>
+              </header>
+              <div class="case-card__body">
+                <h4 class="case-card__section-title" data-i18n="caseDoneTitle">Що зробили</h4>
+                <ul class="case-card__list" data-i18n-list="case3Done">
+                  <li>Аналіз інформаційного поля</li>
+                  <li>Робота з репутацією бренду</li>
+                  <li>Нові тематичні публікації</li>
+                  <li>Посилення позитивних обговорень</li>
+                </ul>
+                <h4 class="case-card__section-title" data-i18n="caseResultTitle">Результат</h4>
+                <p class="case-card__result" data-i18n="case3Result">Збалансували інформаційне поле бренду та посилили видимість актуального контенту в Reddit і Google.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </main>
+    </div>
+
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="foot-cta">
+          <div>
+            <p class="eyebrow" data-i18n="footerEyebrow">Get in touch</p>
+            <h2 data-i18n="footerTitle">Готові виділитися на Reddit?</h2>
+            <p data-i18n="footerLead">Напишіть у зручний спосіб — розберемо потенціал Reddit для вашої ніші.</p>
+          </div>
+          <div class="contacts">
+            <a href="https://t.me/a_gaiduchenko" class="contact-link" target="_blank" rel="noopener noreferrer"><span>Telegram</span><span class="contact-link__handle">@a_gaiduchenko</span></a>
+            <a href="https://t.me/redditqueenua" class="contact-link" target="_blank" rel="noopener noreferrer"><span data-i18n="contactChannelLabel">Telegram-канал</span><span class="contact-link__handle" data-i18n="contactChannelHandle">@redditqueenua</span></a>
+            <a href="mailto:gaiduchenko.anastasiia@gmail.com" class="contact-link"><span>Email</span><span class="contact-link__handle">gaiduchenko.anastasiia@gmail.com</span></a>
+            <a href="https://www.linkedin.com/in/anastasiia-haiduchenko" class="contact-link" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span class="contact-link__handle">anastasiia-haiduchenko</span></a>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <span data-i18n="footerCopy">© 2026 Анастасія Гайдученко</span>
+          <span data-i18n="footerLocation">Reddit Growth Strategist · Lviv, Ukraine</span>
+        </div>
+      </div>
+    </footer>
+
+    <div id="contact-modal" class="contact-modal" aria-hidden="true" role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+      <div class="contact-modal__overlay" data-contact-modal-close tabindex="-1"></div>
+      <div class="contact-modal__dialog">
+        <button type="button" class="contact-modal__close" data-contact-modal-close data-i18n-aria="modalClose">&times;</button>
+        <h2 id="contact-modal-title" class="contact-modal__title" data-i18n="contactModalTitle">Зв'яжіться зі мною</h2>
+        <p class="contact-modal__lead" data-i18n="contactModalLead">Готова обговорити ваш проєкт. Оберіть зручний спосіб зв'язку.</p>
+        <div class="contacts">
+          <a href="https://t.me/a_gaiduchenko" class="contact-link" target="_blank" rel="noopener noreferrer"><span>Telegram</span><span class="contact-link__handle">@a_gaiduchenko</span></a>
+          <a href="https://t.me/redditqueenua" class="contact-link" target="_blank" rel="noopener noreferrer"><span data-i18n="contactChannelLabel">Telegram-канал</span><span class="contact-link__handle" data-i18n="contactChannelHandle">@redditqueenua</span></a>
+          <a href="mailto:gaiduchenko.anastasiia@gmail.com" class="contact-link"><span>Email</span><span class="contact-link__handle">gaiduchenko.anastasiia@gmail.com</span></a>
+          <a href="https://www.linkedin.com/in/anastasiia-haiduchenko" class="contact-link" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span class="contact-link__handle">anastasiia-haiduchenko</span></a>
+        </div>
+      </div>
+    </div>
 
     <script src="../js/translations.js"></script>
     <script src="../js/site.js"></script>

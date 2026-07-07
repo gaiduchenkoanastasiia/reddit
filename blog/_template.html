@@ -1,0 +1,118 @@
+<!--
+  ШАБЛОН СТАТТІ БЛОГУ
+  ===================
+  Як додати нову статтю:
+  1. Скопіюйте цю папку: blog/_template/ → blog/назва-статті/
+  2. Перейменуйте index.html (залиште як є)
+  3. Замініть текст у блоці <article> (заголовок, дату, контент)
+  4. Додайте картку статті в blog/index.html (скопіюйте блок <a class="blog-card">)
+  5. Додайте URL у sitemap.xml
+  6. (Опційно) Додайте ключі перекладу в js/translations.js для UA/EN
+-->
+<!doctype html>
+<html lang="uk" data-page="blog-article">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0705" />
+    <meta name="color-scheme" content="dark" />
+    <style>html{background-color:#0a0705;color-scheme:dark}body{background-color:#0a0705;color:#f7efe8}</style>
+    <script>try{if(sessionStorage.getItem('reddit-nav'))document.documentElement.classList.add('nav-enter');}catch(e){}</script>
+    <link rel="icon" type="image/svg+xml" href="../../favicon.svg" />
+    <link rel="stylesheet" href="../../css/style.css" />
+    <title>НАЗВА СТАТТІ | Anastasiia Haiduchenko</title>
+    <meta name="description" id="meta-description" content="КОРОТКИЙ ОПИС СТАТТІ ДЛЯ SEO" />
+    <meta name="author" content="Anastasiia Haiduchenko" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://gaiduchenkoanastasiia.github.io/reddit/blog/SLUG/" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body class="page-inner page-blog-article">
+    <script src="../../js/lang-boot.js"></script>
+    <script src="../../js/lang-chrome.js"></script>
+    <!-- Header — не змінювати структуру, лише шляхи ../../ -->
+    <header class="site-header" id="site-header">
+      <div class="container site-header__inner">
+        <a href="../../" class="site-brand">Anastasiia Haiduchenko</a>
+        <button type="button" class="site-nav-toggle" id="site-nav-toggle" aria-expanded="false" aria-controls="site-nav-panel">
+          <span class="visually-hidden">Відкрити меню</span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+          <span class="site-nav-toggle__bar" aria-hidden="true"></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="site-nav-panel" id="site-nav-panel">
+      <nav class="site-nav">
+        <ul class="site-nav__list">
+          <li><a href="../../services/" class="site-nav__link">Послуги</a></li>
+          <li><a href="../../work/" class="site-nav__link">Результати роботи</a></li>
+          <li><a href="../../about/" class="site-nav__link">Про мене</a></li>
+          <li><a href="../../blog/" class="site-nav__link">Блог</a></li>
+        </ul>
+        <div class="site-header__actions">
+          <div id="lang-switcher" class="lang-switcher" role="group" aria-label="Language">
+            <button type="button" id="lang-switch-ua" aria-pressed="true">UA</button>
+            <button type="button" id="lang-switch-en" aria-pressed="false">EN</button>
+          </div>
+          <a href="../../#contact" class="btn btn-primary site-header__cta">Запланувати консультацію</a>
+        </div>
+      </nav>
+    </div>
+
+    <div class="page-transition-shell" id="page-content">
+      <article class="container" style="padding:60px 26px 90px">
+        <header class="article-hero">
+          <p class="eyebrow">КАТЕГОРІЯ</p>
+          <p class="article-hero__meta">X хв читання · МІСЯЦЬ РІК</p>
+          <h1>ЗАГОЛОВОК СТАТТІ</h1>
+        </header>
+
+        <!-- Замініть на <img src="../../assets/images/your-image.jpg" alt=""> або залиште градієнт -->
+        <div class="article-cover">
+          <img src="../../assets/images/profile-photo.jpg" alt="Обкладинка статті" />
+        </div>
+
+        <div class="article-content">
+          <p>Перший абзац статті.</p>
+          <h2>Підзаголовок</h2>
+          <p>Текст секції.</p>
+          <ul>
+            <li>Пункт списку</li>
+          </ul>
+          <a href="../../blog/" class="btn btn-ghost" style="margin-top:24px">← Назад до блогу</a>
+        </div>
+      </article>
+    </div>
+
+    <!-- Footer — не змінювати -->
+    <footer class="site-footer" id="contact">
+      <div class="container">
+        <div class="foot-cta">
+          <div>
+            <p class="eyebrow">Get in touch</p>
+            <h2>Готові виділитися на Reddit?</h2>
+            <p>Напишіть у зручний спосіб — розберемо потенціал Reddit для вашої ніші.</p>
+          </div>
+          <div class="contacts">
+            <a href="https://t.me/a_gaiduchenko" class="contact-link" target="_blank" rel="noopener noreferrer"><span>Telegram</span><span class="contact-link__handle">@a_gaiduchenko</span></a>
+            <a href="https://t.me/redditqueenua" class="contact-link" target="_blank" rel="noopener noreferrer"><span data-i18n="contactChannelLabel">Telegram-канал</span><span class="contact-link__handle" data-i18n="contactChannelHandle">@redditqueenua</span></a>
+            <a href="mailto:gaiduchenko.anastasiia@gmail.com" class="contact-link"><span>Email</span><span class="contact-link__handle">gaiduchenko.anastasiia@gmail.com</span></a>
+            <a href="https://www.linkedin.com/in/anastasiia-haiduchenko" class="contact-link" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><span class="contact-link__handle">anastasiia-haiduchenko</span></a>
+          </div>
+        </div>
+        <div class="foot-bottom">
+          <span>© 2026 Анастасія Гайдученко</span>
+          <span>Reddit Growth Strategist · Lviv, Ukraine</span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="../../js/translations.js"></script>
+    <script src="../../js/site.js"></script>
+    <script src="../../js/i18n.js"></script>
+  </body>
+</html>

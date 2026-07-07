@@ -3,7 +3,7 @@
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://gaiduchenkoanastasiia.github.io/reddit/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <xhtml:link rel="alternate" hreflang="uk" href="https://gaiduchenkoanastasiia.github.io/reddit/"/>
@@ -12,32 +12,32 @@
   </url>
   <url>
     <loc>https://gaiduchenkoanastasiia.github.io/reddit/services/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
     <loc>https://gaiduchenkoanastasiia.github.io/reddit/work/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gaiduchenkoanastasiia.github.io/reddit/about/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
     <loc>https://gaiduchenkoanastasiia.github.io/reddit/blog/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://gaiduchenkoanastasiia.github.io/reddit/contact/</loc>
-    <lastmod>2026-06-21</lastmod>
+    <loc>https://gaiduchenkoanastasiia.github.io/reddit/blog/reddit-novyj-google/</loc>
+    <lastmod>2026-07-02</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.9</priority>
+    <priority>0.7</priority>
   </url>
 </urlset>
