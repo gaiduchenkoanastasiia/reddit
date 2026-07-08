@@ -406,6 +406,24 @@ window.REDDIT_TRANSLATIONS = {
     pageWorkTitle: 'Результати роботи',
     pageWorkLead: 'Приклади матеріалів, кейсів і результатів, які отримують клієнти під час роботи зі мною.',
 
+    resBlock1Title: 'Аналітика Reddit-постів',
+    resBlock1Sub: 'Реальні приклади органічного охоплення та взаємодії під публікаціями в різних нішах.',
+    resBlock2Title: 'SEO-результати (Ahrefs)',
+    resBlock2Sub: 'Reddit-публікації починають ранжуватися в Google та приносять стабільний органічний трафік.',
+    resBlock2List: [
+      'Зростання органічного трафіку',
+      'Поява ключових слів у видачі',
+      'Збільшення цінності SEO-трафіку',
+    ],
+    resBlock3Title: 'Аналітика сабредітів',
+    resBlock3Sub: 'Приклади розвитку брендових та тематичних спільнот.',
+    resBlock4Title: 'Видалення Reddit публікацій',
+    resBlock4Sub: 'Приклади успішної роботи над видаленням небажаних Reddit-публікацій та їх подальшим зникненням із пошукової видачі Google.',
+
+    resultLightboxTitle: 'Перегляд зображення',
+    resultLightboxPrev: 'Попереднє зображення',
+    resultLightboxNext: 'Наступне зображення',
+
     pageAboutMetaTitle: 'Про мене | Anastasiia Haiduchenko — Reddit Marketing Expert',
     pageAboutMetaDescription: 'Анастасія Гайдученко — Reddit Marketing Expert з 4+ роками досвіду роботи з брендами.',
     pageAboutEyebrow: 'Експерт',
@@ -1188,6 +1206,24 @@ window.REDDIT_TRANSLATIONS = {
     pageWorkEyebrow: 'Results',
     pageWorkTitle: 'Work results',
     pageWorkLead: 'Sample materials, case studies, and outcomes clients receive when working with me.',
+
+    resBlock1Title: 'Reddit post analytics',
+    resBlock1Sub: 'Real examples of organic reach and engagement under posts across different niches.',
+    resBlock2Title: 'SEO results (Ahrefs)',
+    resBlock2Sub: 'Reddit posts start ranking in Google and deliver steady organic traffic.',
+    resBlock2List: [
+      'Growth in organic traffic',
+      'Keywords appearing in search results',
+      'Increased value of SEO traffic',
+    ],
+    resBlock3Title: 'Subreddit analytics',
+    resBlock3Sub: 'Examples of growing branded and niche communities.',
+    resBlock4Title: 'Removal of Reddit posts',
+    resBlock4Sub: 'Examples of successful removal of unwanted Reddit posts and their subsequent disappearance from Google search results.',
+
+    resultLightboxTitle: 'Image preview',
+    resultLightboxPrev: 'Previous image',
+    resultLightboxNext: 'Next image',
 
     pageAboutMetaTitle: 'About me | Anastasiia Haiduchenko — Reddit Marketing Expert',
     pageAboutMetaDescription: 'Anastasiia Haiduchenko — Reddit Marketing Expert with 4+ years of experience working with brands.',
