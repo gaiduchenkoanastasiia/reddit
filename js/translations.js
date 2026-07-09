@@ -420,6 +420,14 @@ window.REDDIT_TRANSLATIONS = {
     resBlock4Title: 'Видалення Reddit публікацій',
     resBlock4Sub: 'Приклади успішної роботи над видаленням небажаних Reddit-публікацій та їх подальшим зникненням із пошукової видачі Google.',
 
+    resInfo1Title: 'Кожен проєкт — індивідуальний',
+    resInfo1P1: 'Не існує універсальної стратегії, яка працює однаково для всіх бізнесів.',
+    resInfo1P2: 'Обсяг робіт, формат контенту, кількість публікацій і підхід до просування завжди залежать від ніші, конкурентного середовища та ваших бізнес-цілей.',
+    resInfo1P3: 'Саме тому кожна співпраця починається з аналізу та побудови індивідуальної стратегії.',
+    resInfo2Title: 'Чому я не показую назви клієнтів?',
+    resInfo2P1: 'Більшість проєктів реалізуються на умовах конфіденційності. Саме тому на сайті представлені реальні результати роботи з анонімізованими даними, без розкриття назв брендів.',
+    resInfo2P2: 'Для мене це питання професійної етики. Так само, як я не публікую інформацію про поточних клієнтів, я гарантую конфіденційність і майбутнім партнерам.',
+
     resultLightboxTitle: 'Перегляд зображення',
     resultLightboxPrev: 'Попереднє зображення',
     resultLightboxNext: 'Наступне зображення',
@@ -1220,6 +1228,14 @@ window.REDDIT_TRANSLATIONS = {
     resBlock3Sub: 'Examples of growing branded and niche communities.',
     resBlock4Title: 'Removal of Reddit posts',
     resBlock4Sub: 'Examples of successful removal of unwanted Reddit posts and their subsequent disappearance from Google search results.',
+
+    resInfo1Title: 'Every project is individual',
+    resInfo1P1: 'There is no universal strategy that works the same for every business.',
+    resInfo1P2: 'Scope of work, content format, number of posts, and promotion approach always depend on the niche, competitive landscape, and your business goals.',
+    resInfo1P3: 'That is why every collaboration starts with analysis and building an individual strategy.',
+    resInfo2Title: 'Why don\'t I show client names?',
+    resInfo2P1: 'Most projects are delivered under confidentiality terms. That is why the site shows real work results with anonymized data, without revealing brand names.',
+    resInfo2P2: 'For me, this is a matter of professional ethics. Just as I do not publish information about current clients, I guarantee confidentiality to future partners as well.',
 
     resultLightboxTitle: 'Image preview',
     resultLightboxPrev: 'Previous image',

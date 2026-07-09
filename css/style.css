@@ -1705,6 +1705,25 @@ body.result-lightbox-open {
   margin-bottom: 24px;
 }
 
+.results-info {
+  margin-top: 48px;
+}
+
+.results-info__body p:not(.principles__note) {
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+  margin: 0 0 14px;
+}
+
+.results-info__body p:not(.principles__note):last-child {
+  margin-bottom: 0;
+}
+
+.results-info__body .principles__note {
+  margin-top: 4px;
+}
+
 /* Blog */
 .blog-card {
   display: grid;
