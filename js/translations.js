@@ -39,6 +39,7 @@ window.REDDIT_TRANSLATIONS = {
     quickNavQ4: 'Хочете передати Reddit повністю?',
     quickNavA4: '→ Reddit під ключ',
     servicesTermLabel: 'Термін:',
+    servicesNoteLabel: 'Примітка:',
     servicesToolkitLabel: 'REDDIT НАПРЯМИ',
     servicesToolkitTabsAria: 'Напрями співпраці',
     servicesIncludesLabel: 'Що входить',
@@ -227,7 +228,7 @@ window.REDDIT_TRANSLATIONS = {
     ],
     removalTermText: 'Робота над однією публікацією зазвичай займає до 2 тижнів, залежно від її історії, активності та особливостей конкретного сабредіту.',
     serviceGuideTitle: 'Гайд з реєстрації та прогріву Reddit-акаунтів',
-    serviceGuidePrice: 'від $100',
+    serviceGuidePrice: 'від $250',
     serviceGuideDesc: 'Покрокова інструкція зі створення та безпечного прогріву Reddit-акаунтів для органічної роботи.',
     serviceGuideFeatures: [
       'Створення акаунта',
@@ -255,6 +256,7 @@ window.REDDIT_TRANSLATIONS = {
       'Ілюстрації та реальні приклади',
     ],
     guideTermText: 'Цифровий формат · доступ одразу після оплати.',
+    guideCompanyNoteText: 'Для компаній вартість обговорюється індивідуально — залежно від кількості людей, яких потрібно навчити.',
     serviceTurnkeyTitle: 'Reddit під ключ',
     serviceTurnkeyPrice: 'від $1200/місяць',
     serviceTurnkeyDesc:
@@ -952,6 +954,7 @@ window.REDDIT_TRANSLATIONS = {
     quickNavQ4: 'Want to hand Reddit over completely?',
     quickNavA4: '→ Reddit end-to-end',
     servicesTermLabel: 'Timeline:',
+    servicesNoteLabel: 'Note:',
     servicesToolkitLabel: 'REDDIT DIRECTIONS',
     servicesToolkitTabsAria: 'Reddit collaboration directions',
     servicesIncludesLabel: 'What\'s included',
@@ -1142,7 +1145,7 @@ window.REDDIT_TRANSLATIONS = {
     ],
     removalTermText: 'Work on one post usually takes up to 2 weeks, depending on its history, activity, and subreddit specifics.',
     serviceGuideTitle: 'Reddit account registration & warm-up guide',
-    serviceGuidePrice: 'from $100',
+    serviceGuidePrice: 'from $250',
     serviceGuideDesc: 'A step-by-step guide to creating and safely warming up Reddit accounts for organic work.',
     serviceGuideFeatures: [
       'Account setup',
@@ -1170,6 +1173,7 @@ window.REDDIT_TRANSLATIONS = {
       'Illustrations and real examples',
     ],
     guideTermText: 'Digital format · instant access after payment.',
+    guideCompanyNoteText: 'For companies, the price is discussed individually — depending on the number of people to be trained.',
     serviceTurnkeyTitle: 'Reddit end-to-end',
     serviceTurnkeyPrice: 'from $1200/month',
     serviceTurnkeyDesc:
