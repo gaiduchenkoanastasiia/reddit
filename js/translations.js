@@ -138,7 +138,7 @@ window.REDDIT_TRANSLATIONS = {
       'Посилення активності навколо поста',
     ],
     serviceDiscussionsTitle: 'Робота з обговореннями',
-    serviceDiscussionsPrice: 'від $150',
+    serviceDiscussionsPrice: 'від $200',
     serviceDiscussionsDesc:
       'Присутність бренду в релевантних дискусіях Reddit для впізнаваності, трафіку та довіри.',
     serviceDiscussionsFeatures: [
@@ -165,7 +165,7 @@ window.REDDIT_TRANSLATIONS = {
     ],
     discussionsTermText: '5–7 робочих днів після погодження контенту.',
     discussionsPricingLabel: 'Вартість:',
-    discussionsPricingText: '$150 за 10 коментарів.',
+    discussionsPricingText: '$200 за 10 коментарів.',
     serviceSubredditTitle: 'Ведення сабредіту',
     serviceSubredditPrice: '$900/міс',
     serviceSubredditDesc: 'Розвиток власного або тематичного сабредіту як довгострокового каналу комунікації та залучення аудиторії.',
@@ -1063,7 +1063,7 @@ window.REDDIT_TRANSLATIONS = {
       'Boosted activity around the post',
     ],
     serviceDiscussionsTitle: 'Discussion engagement',
-    serviceDiscussionsPrice: 'from $150',
+    serviceDiscussionsPrice: 'from $200',
     serviceDiscussionsDesc:
       'Brand presence in relevant Reddit discussions for recognition, traffic, and trust.',
     serviceDiscussionsFeatures: [
@@ -1090,7 +1090,7 @@ window.REDDIT_TRANSLATIONS = {
     ],
     discussionsTermText: '5–7 business days after content approval.',
     discussionsPricingLabel: 'Price:',
-    discussionsPricingText: '$150 for 10 comments.',
+    discussionsPricingText: '$200 for 10 comments.',
     serviceSubredditTitle: 'Subreddit management',
     serviceSubredditPrice: '$900/mo',
     serviceSubredditDesc: 'Growing your own or thematic subreddit as a long-term communication and audience channel.',
